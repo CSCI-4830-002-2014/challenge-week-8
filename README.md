@@ -1,10 +1,10 @@
 # Name
 
-write-your-name
+Chris Wittenberg
 
 # How many points have you earned?
 
-0/100
+25/100
 
 (Make your own calculation and replace the number 0 with the points you think you've earned.)
 
@@ -20,19 +20,27 @@ fill-in-your-answer
 
 ## Link (2 points)
 
-[title-of-the-article](http://link-to-an-example-of-big-data-visualization-in-a-public-space)
+[Making Climate CHange Visual](http://visualizing.org/galleries/making-climate-change-visual)
 
 ## Describe briefly the "motivation" and "intended audience" of this public visualization (4 points).
 
-fill-in-your-answer
+The motivation Bryan Connor had for creating this data visualization is to give people and insightfull visulation that projects the problem of climate change through a variety of lenses; total emissions, emissions per capita, and gdp growth. He wants to show people how complex the issue of climate change really is. His intended audience are average, everyday people. 
 
 # Checkpoints (5 points x 4 = 20 points)
 
 ## 1 (5 points)
 
-![image](image.png?raw=true)
+![image](checkpoint1a.png?raw=true)
 
-[checkpoint1](checkpoint1.html)
+[checkpoint1](checkpoint1a.html)
+
+![image](checkpoint1b.png?raw=true)
+
+[checkpoint1](checkpoint1b.html)
+
+![image](checkpoint1c.png?raw=true)
+
+[checkpoint1](checkpoint1c.html)
 
 ## 2 (5 points)
 
