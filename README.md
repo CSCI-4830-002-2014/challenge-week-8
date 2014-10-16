@@ -1,6 +1,6 @@
 # Name
 
-write-your-name
+Brian Newsom
 
 # How many points have you earned?
 
@@ -30,15 +30,23 @@ fill-in-your-answer
 
 ## 1 (5 points)
 
-![image](image.png?raw=true)
+![image](img/cp1a.png?raw=true)
 
-[checkpoint1](checkpoint1.html)
+[checkpoint1](cp1a.html)
+
+![image](img/cp1b.png?raw=true)
+
+[checkpoint1](cp1b.html)
+
+![image](img/cp1c.png?raw=true)
+
+[checkpoint1](cp1c.html)
 
 ## 2 (5 points)
 
-![image](image.png?raw=true)
+![image](img/cp2.png?raw=true)
 
-[checkpoint2](checkpoint2.html)
+[checkpoint2](cp2.html)
 
 ## 3 (5 points)
 
