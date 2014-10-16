@@ -1,10 +1,11 @@
+<!-- Followed Tutorial at http://chimera.labs.oreilly.com/books/1230000000345/ch06.html -->
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<meta charset="utf-8">
-		<title>D3 Scatterplot</title>
+    <meta charset="utf-8">
+    <title>D3 Scatterplot</title>
     <script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
-		<style type="text/css">
+    <style type="text/css">
 		</style>
 	</head>
 	<body>
@@ -15,10 +16,8 @@
 			var w = 500;
 			var h = 100;
 
-			var dataset = [
-							[5, 20], [480, 90], [250, 50], [100, 33], [330, 95],
-							[410, 12], [475, 44], [25, 67], [85, 21], [220, 88]
-						  ];
+			var dataset = [[5, 20], [480, 90], [250, 50], [100, 33], [330, 95],
+							[410, 12], [475, 44], [25, 67], [85, 21], [220, 88]];
 
 			//Create SVG element
 			var svg = d3.select("body")
