@@ -1,10 +1,8 @@
 # Name
-
-write-your-name
+Dawson Botsford
 
 # How many points have you earned?
-
-0/100
+100/100
 
 (Make your own calculation and replace the number 0 with the points you think you've earned.)
 
@@ -20,11 +18,10 @@ fill-in-your-answer
 
 ## Link (2 points)
 
-[title-of-the-article](http://link-to-an-example-of-big-data-visualization-in-a-public-space)
+[Green Strategy and Environmental Data Visualization for General Services Administration](http://www.ideo.com/work/green-strategy-and-environmental-data-vis)
 
 ## Describe briefly the "motivation" and "intended audience" of this public visualization (4 points).
-
-fill-in-your-answer
+Buildings are being outfitted in dashboards with a display about the "green-ness" of the building. It manages GSA properties and is inteded to motivate employees to take part in being more green.
 
 # Checkpoints (5 points x 4 = 20 points)
 
