@@ -1,10 +1,10 @@
 # Name
 
-write-your-name
+Logan Bates
 
 # How many points have you earned?
 
-0/100
+5/100
 
 (Make your own calculation and replace the number 0 with the points you think you've earned.)
 
@@ -30,9 +30,13 @@ fill-in-your-answer
 
 ## 1 (5 points)
 
-![image](image.png?raw=true)
+![image](checkpoint1a.png?raw=true)
+![image](checkpoint1b.png?raw=true)
+![image](checkpoint1c.png?raw=true)
 
-[checkpoint1](checkpoint1.html)
+[checkpoint1a](checkpoint1a.html)
+[checkpoint1b](checkpoint1b.html)
+[checkpoint1c](checkpoint1c.html)
 
 ## 2 (5 points)
 
