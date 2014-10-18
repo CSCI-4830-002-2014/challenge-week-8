@@ -26,26 +26,31 @@ Buildings are being outfitted in dashboards with a display about the "green-ness
 # Checkpoints (5 points x 4 = 20 points)
 
 ## 1 (5 points)
-
+1a:
 ![image](http://i.imgur.com/43dBPTr.png)
+[checkpoint1](checkpoint1a.html)
 
-[checkpoint1](checkpoint1.html)
+1b:
+![image](http://i.imgur.com/RLP43KM.png)
+[checkpoint1](checkpoint1b.html)
+
+1c:
+![image](http://i.imgur.com/qNSJ9pS.png)
+[checkpoint1](checkpoint1c.html)
 
 ## 2 (5 points)
 
-![image](http://i.imgur.com/RLP43KM.png)
+![image](http://i.imgur.com/KIIiOXO.png)
 
 [checkpoint2](checkpoint2.html)
 
 ## 3 (5 points)
 
-![image](http://i.imgur.com/qNSJ9pS.png)
 
 [checkpoint3](checkpoint3.html)
 
 ## 4 (5 points)
 
-![image](image.png?raw=true)
 
 [checkpoint4](checkpoint4.html)
 
