@@ -30,9 +30,16 @@ fill-in-your-answer
 
 ## 1 (5 points)
 
-![image](image.png?raw=true)
+![image](images/ch2a.png?raw=true)
 
-[checkpoint1](checkpoint1.html)
+[ch2a](ch2a.html)
+
+![image](images/ch2c.png?raw=true)
+
+[ch2c](ch2c.html)
+![image](images/ch2e.png?raw=true)
+
+[ch2e](ch2e.html)
 
 ## 2 (5 points)
 
