@@ -30,34 +30,34 @@ fill-in-your-answer
 
 ## 1 (5 points)
 
-![image](images/ch2a.png?raw=true)
+![image](images/cp1a.png?raw=true)
 
-[ch2a](ch2a.html)
+[ch2a](cp1a.html)
 
-![image](images/ch2c.png?raw=true)
+![image](images/cp1c.png?raw=true)
 
-[ch2c](ch2c.html)
-![image](images/ch2e.png?raw=true)
+[ch2c](cp1c.html)
+![image](images/cp1e.png?raw=true)
 
-[ch2e](ch2e.html)
+[ch2e](cp1e.html)
 
 ## 2 (5 points)
 
-![image](image.png?raw=true)
+![image](images/cp2.png?raw=true)
 
-[checkpoint2](checkpoint2.html)
+[checkpoint2](cp2.html)
 
 ## 3 (5 points)
 
-![image](image.png?raw=true)
+![image](images/cp3.png?raw=true)
 
-[checkpoint3](checkpoint3.html)
+[checkpoint3](cp3.html)
 
 ## 4 (5 points)
 
-![image](image.png?raw=true)
+![image](images/cp4.png?raw=true)
 
-[checkpoint4](checkpoint4.html)
+[checkpoint4](cp4.html)
 
 # Challenges
 
