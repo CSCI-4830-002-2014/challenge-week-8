@@ -30,25 +30,33 @@ She 3d printed teeth girlls based on infromation from lyrics from different hip 
 
 ## 1 (5 points)
 
-![image](image.png?raw=true)
+![image](cp1-a.png)
 
-[checkpoint1](checkpoint1.html)
+[checkpoint1](cp1-a.html)
+
+![image](cp1-c.png)
+
+[checkpoint1](cp1-c.html)
+
+![image](cp1-e.png)
+
+[checkpoint1](cp1-e.html)
 
 ## 2 (5 points)
 
-![image](image.png?raw=true)
+![image](chp-2.png)
 
-[checkpoint2](checkpoint2.html)
+[checkpoint2](cp2.html)
 
 ## 3 (5 points)
 
-![image](image.png?raw=true)
+![image](cp-3.png)
 
-[checkpoint3](checkpoint3.html)
+[checkpoint3](checkpoint-3.html)
 
 ## 4 (5 points)
 
-![image](image.png?raw=true)
+![image](cp-4.png)
 
 [checkpoint4](checkpoint4.html)
 
