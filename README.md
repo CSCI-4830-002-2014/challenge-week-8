@@ -18,11 +18,13 @@ Challenge 3 - Implementing hand-drawn visualizations
 
 ## Link (2 points)
 
-[title-of-the-article](http://link-to-an-example-of-big-data-visualization-in-a-public-space)
+[The MarketSite experience](http://www.percepted.com/project/nasdaq-marketsite-data-visualization/)
 
 ## Describe briefly the "motivation" and "intended audience" of this public visualization (4 points).
 
-fill-in-your-answer
+The motivation behind the visualization is to provide real-time financial data market data to the public.
+The intenden audience, as stated by the article is "the investing public and its many constituents", so
+any public person interested in data from the financial market could benefit form the visualizations.
 
 # Checkpoints (5 points x 4 = 20 points)
 
@@ -121,6 +123,7 @@ fill-in-your-answer
 ### 3.b. (8 points)
 
 ![image](screenshots/challenge3-b.png?raw=true)
+(the fifth repo is not actually watched, but was made so to indicate how it would look)
 
 [challenge3-b](html/challenge3-b.html)
 
