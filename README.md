@@ -40,7 +40,7 @@ fill-in-your-answer
 
 ## 2 (5 points)
 
-![image](image.png?raw=true)
+![image](checkpoint2.png?raw=true)
 
 [checkpoint2](checkpoint2.html)
 
