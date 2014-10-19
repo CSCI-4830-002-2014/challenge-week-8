@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>D3</title>
+        <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/d3/3.4.12/d3.min.js"></script>
+        <style type="text/css">  
+        </style>
+    </head>
+    <body>
+        <script type="text/javascript">
+            var w = 900;
+            var h = 400;
+            var padding = 22;
+            var pinWidth = 25;
+
+            // URL (using temp to avoid github api limit)
+            var url = "https://rawgit.com/nfejes/challenge-week-8/master/html/repos.json";
+//          var url = "https://api.github.com/orgs/csci-4830-002-2014/repos";
+
+            d3.json(url, function(error, dataset) {
+                if (error) console.log(error);
+
+                var svg = d3.select("body")          
+                            .append("svg")
+                            .attr("width", w)
+                            .attr("height", h);
+
+                pinWidth = 0.2 * w / dataset.length;
+                maxSize  = w / dataset.length;
+
+                // Border
+                svg.append('rect')
+                   .attr('width', w)
+                   .attr('height', h)
+                   .attr('style', 'fill:white; stroke:black; stroke-width:4');
+
+                // Scales
+                var sizeScale = d3.scale.linear()
+                             .domain([0, d3.max(dataset, function(d) { return +d.size })])
+                             .range([pinWidth * pinWidth, maxSize * maxSize]);
+                var forkScale = d3.scale.linear()
+                             .domain([0, d3.max(dataset, function(d) { return +d.forks_count })])
+                             .range([0, h-maxSize]);
+                var issueScale = d3.scale.linear()
+                             .domain([0, d3.max(dataset, function(d) { return +d.open_issues_count })])
+                             .range([padding, h-maxSize]);
+                var xScale = d3.scale.linear().domain([0,dataset.length]).range([0,w]);
+
+
+                // Symbols (groups)
+                symbol = svg.selectAll("g")
+                   .data(dataset)
+                   .enter()
+                   .append("g")
+                   .attr("transform", function(d, i) {
+                       return "translate(" + xScale(i) + ",0)";
+                   });
+
+                // Helper functions
+                function radius(d) { return Math.sqrt(sizeScale(d.size)) / 2 }
+
+                // Create pins
+                symbol.append("rect")
+                   .attr("width",  pinWidth)
+                   .attr("height",  function(d) { return forkScale(d.forks_count) + radius(d) })
+                   .attr("x", w / (2 * dataset.length) - pinWidth/2)
+                   .attr("y", function(d) { return h - 1 - forkScale(d.forks_count) - radius(d) })
+                   .attr('style', 'stroke:black; stroke-width:2')
+                   .attr('fill', function(d) { return d.watchers == 0 ? 'white' : 'black' });
+ 
+                // Create circles
+                symbol.append("circle")
+                   .attr("r", radius)
+                   .attr("cx", w / (2 * dataset.length))
+                   .attr("cy", function(d) { return h - 1 - (forkScale(d.forks_count) + radius(d)) })
+                   .attr('style', 'fill:white; stroke:black; stroke-width:2');
+ 
+            });
+        </script>
+    </body>
+</html>
