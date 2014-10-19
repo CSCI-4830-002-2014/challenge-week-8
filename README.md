@@ -4,7 +4,7 @@ Logan Bates
 
 # How many points have you earned?
 
-5/100
+20/100
 
 (Make your own calculation and replace the number 0 with the points you think you've earned.)
 
@@ -46,13 +46,13 @@ fill-in-your-answer
 
 ## 3 (5 points)
 
-![image](image.png?raw=true)
+![image](checkpoint3.png?raw=true)
 
 [checkpoint3](checkpoint3.html)
 
 ## 4 (5 points)
 
-![image](image.png?raw=true)
+![image](checkpoint4.png?raw=true)
 
 [checkpoint4](checkpoint4.html)
 
