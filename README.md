@@ -58,13 +58,13 @@ influenced.
 
 ## 3 (5 points)
 
-![image](cp3.png?raw=true)
+![image](img/cp3.png?raw=true)
 
 [checkpoint3](cp3.html)
 
 ## 4 (5 points)
 
-![image](cp4.png?raw=true)
+![image](img/cp4.png?raw=true)
 
 [checkpoint4](cp4.html)
 
