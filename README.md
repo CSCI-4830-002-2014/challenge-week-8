@@ -8,7 +8,7 @@ Niklas Fejes
 
 # How many hours have you spent on this?
 
-7 hours
+9 hours
 
 # What is the most difficult part about this week's challenge?
 
