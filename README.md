@@ -30,17 +30,17 @@ She 3d printed teeth girlls based on infromation from lyrics from different hip 
 
 ## 1 (5 points)
 
-![image](cp1-a.png)
+![image](cp1_a.png)
 
-[checkpoint1](cp1-a.html)
+[A](cp1-a.html)
 
-![image](cp1-c.png)
+![image](cp1_c.png)
 
-[checkpoint1](cp1-c.html)
+[C](cp1-c.html)
 
-![image](cp1-e.png)
+![image](cp1_e.png)
 
-[checkpoint1](cp1-e.html)
+[E](cp1-e.html)
 
 ## 2 (5 points)
 
