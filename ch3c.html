@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>D3</title>
+        <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/d3/3.4.12/d3.min.js"></script>
+        <style type="text/css">
+        </style>
+    </head>
+    <body>
+        <script type="text/javascript">
+            var w = 800;
+            var h = 400;
+            var margin = 100;
+
+        d3.json("https://api.github.com/orgs/csci-4830-002-2014/repos", function(error, dataset) {
+              data = dataset;
+
+            var svg = d3.select("body")
+                        .append("svg")
+                        .attr("width", w)
+                        .attr("height", h);
+
+            symbol = svg.selectAll("g")
+              .data(dataset)
+              .enter()
+              .append("g")
+
+            symbol.append("rect")
+                .attr("width", function(d,i){
+                    return w/4;
+                })
+                .attr("height", function(d,i){
+                    return 30; // TODO
+                })
+                .attr("x", function(d,i){
+                    return 2*w/3; // TODO
+                })
+                .attr("y", function(d,i){
+                    return i*20; // TODO
+                })
+                .attr("stroke", "black")
+                .attr("fill","white")
+
+            symbol.append("text")
+                .text(function(d,i) { return d.name;})
+                .attr("x", 2*w/3)
+                .attr("y", function(d,i) { return i* 20;})
+
+            for(i = 0; i < 3 ; i++){  //This is jankety but works
+              symbol.append("rect")
+                  .attr("width", w/4)
+                  .attr("height", 60)
+                  .attr("x", w/3)
+                  .attr("y",  100 + i*60)
+                  .attr("stroke", "black")
+                  .attr("fill","white")
+              symbol.append("text")
+                  .text("2014-" + String(i+8))
+                  .attr("x", w/3)
+                  .attr("y", 120 + i*60)
+            }
+
+            symbol.append("line")
+                .attr("x1", function(d) {
+                  return w/3 + w/4;
+                })
+                .attr("y1", function(d) {
+                  if(d.created_at.charAt(6)=="8"){
+                    return 130;
+                  }
+                  if(d.created_at.charAt(6)=="9"){
+                    return 190
+                  }
+                  if(d.created_at.charAt(6)=="0"){ //Not safe
+                    return 250
+                  }
+                })
+                .attr("x2", function(d) {
+                  return 2*w/3;
+                })
+                .attr("y2", function(d,i) {
+                  return i*20 + 10;
+                })
+                .attr("stroke-width", 2)
+                .attr("stroke", "black");
+
+            })
+
+
+
+        </script>
+    </body>
+</html>

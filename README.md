@@ -4,27 +4,35 @@ Brian Newsom
 
 # How many points have you earned?
 
-0/100
+100/100
 
 (Make your own calculation and replace the number 0 with the points you think you've earned.)
 
 # How many hours have you spent on this?
 
-fill-in-your-answer
+12
 
 # What is the most difficult part about this week's challenge?
 
-fill-in-your-answer
+Challenge 1 was the most challenging for me because it was open and I was not caught up on d3.
+Overall this was the most challenging assignment so far, and took a long time and a lot of late nights.
 
 # Show and tell (6 points)
 
 ## Link (2 points)
 
-[title-of-the-article](http://link-to-an-example-of-big-data-visualization-in-a-public-space)
+[Where Do College Graduates Work?](http://www.census.gov/dataviz/visualizations/stem/stem-html/)
 
 ## Describe briefly the "motivation" and "intended audience" of this public visualization (4 points).
 
-fill-in-your-answer
+First of all, I wasn't positive if this question was asking for a physical display or just something publically accessible.
+I'm sorry if I did this wrong.
+
+This census data display highlights the fields with lots of jobs and what majors end up working.
+I would guess this is to encourage people to pursue STEM education and careers, as they have the most jobs available.
+The intended audience is probably young people who have not decided on a field so that they are influenced
+to pursue a major with jobs available.   Ideally high school or young college age individuals would be the most
+influenced.
 
 # Checkpoints (5 points x 4 = 20 points)
 
@@ -120,18 +128,18 @@ fill-in-your-answer
 
 ### 3.a. (8 points)
 
-![image](image.png?raw=true)
+![image](img/ch3a.png?raw=true)
 
-[challenge3-a](checkpoint3-a.html)
+[challenge3-a](ch3a.html)
 
 ### 3.b. (8 points)
 
-![image](image.png?raw=true)
+![image](img/ch3b.png?raw=true)
 
-[challenge3-b](checkpoint3-b.html)
+[challenge3-b](ch3b.html)
 
 ### 3.c. (8 points)
 
-![image](image.png?raw=true)
+![image](img/ch3c.png?raw=true)
 
-[challenge3-c](checkpoint3-c.html)
+[challenge3-c](ch3c.html)

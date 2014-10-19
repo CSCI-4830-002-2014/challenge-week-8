@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>D3</title>
+        <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/d3/3.4.12/d3.min.js"></script>
+        <style type="text/css">
+        </style>
+    </head>
+    <body>
+        <script type="text/javascript">
+            var w = 800;
+            var h = 400;
+            var margin = 100;
+            var dotSize = 20;
+        d3.json("https://api.github.com/orgs/csci-4830-002-2014/repos", function(error, dataset) {
+              data = dataset;
+
+            var svg = d3.select("body")
+                        .append("svg")
+                        .attr("width", w)
+                        .attr("height", h);
+
+          var rScale = d3.scale.linear()
+            .domain([0, d3.max(dataset.map(function(d) {
+              return d.size
+            }))])
+            .range([10, 17]);
+
+          var yScale = d3.scale.linear()
+            .domain([0, d3.max(dataset.map(function(d) {
+              return d.forks_count
+            }))])
+            .range([margin, h - margin]);
+
+          var xScale = d3.scale.linear()
+            .domain([0, d3.max(dataset.map(function(d) {
+              return d.forks_count
+            }))])
+            .range([margin, w - margin]);
+
+            symbol = svg.selectAll("g")
+              .data(dataset)
+              .enter()
+              .append("g")
+
+            symbol.append("rect")
+                .attr("width", function(d,i){
+                    return 10;
+                })
+                .attr("height", function(d,i){
+                    return h - yScale(d.forks_count); // TODO
+                })
+                .attr("x", function(d,i){
+                    return margin + i*30 - 5; // TODO
+                })
+                .attr("y", function(d){
+                    return yScale(d.forks_count); // TODO
+                })
+                .attr("stroke", "black")
+                .attr("fill", function(d){
+                    if (d.watchers > 0)
+                      return "black";
+                    else
+                      return "white";
+                });
+
+            symbol.append("circle")
+                .attr("r", function(d){
+                  return rScale(d.size);
+                })
+                .attr("cx", function(d,i){
+                  return margin + i*30;
+                })
+                .attr("cy", function(d){
+                  return yScale(d.forks_count);
+                })
+              .attr("fill", "blue");
+
+
+            })
+
+
+
+        </script>
+    </body>
+</html>

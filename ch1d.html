@@ -28,20 +28,7 @@
           "<strong>Desc:</strong>" + "<span style='color:red'>" + d.description + "</span>" + " " +
           "<strong>Updated:</strong>" + "<span style='color:red'>" + d.updated_at + "</span>";
         })
-/*
-      var tip = d3.tip()
-        .attr('class', 'd3-tip')
-        .offset([-10, 0])
-        .html(function(d) {
-          return "<strong>Name:</strong>
-          <span style='color:red'>" + d.name + "</span>
-          <strong>Private: </strong> <span style='color:red'>" + d.private + "</span>
-          <strong>Description: </strong>
-          <span style='color:red'>" + d.description + "</span>
-          <strong>Updated At: </strong>
-          <span style='color:red'>" + d.updated_at + "</span>";
-      });
-*/
+
       var xScale = d3.scale.linear()
            .domain([0,d3.max(data, function(d) { return d.size;})])
            .range([10, w-100]);
