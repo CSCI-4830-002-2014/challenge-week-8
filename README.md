@@ -95,7 +95,7 @@ fill-in-your-answer
 
 ### 2.b. (5 points)
 
-![image](image.png?raw=true)
+![image](images/ch2b.png?raw=true)
 
 ### 2.c. (5 points)
 

@@ -82,25 +82,28 @@
                 })
                 .attr("fill", "red");
 
-            symbol.append("circle")
-                .attr("r", function(d) {
-                  return d.size/4;
-                })              
-                .attr("cx", function(d){
+            symbol.append("rect")
+                .attr("width", function(d,i){
+                    return d.size / 2;
+                })
+                .attr("height", function(d,i){
+                    return d.size / 2;
+                })                
+                .attr("x", function(d){
                   if (d.quadrant == 1 || d.quadrant == 3){
-                      return d.size / 4;
+                      return 0;
                   }else{
-                      return d.size / 4 * 3;
+                      return d.size / 2;
                   }
                 })
-                .attr("cy", function(d){
+                .attr("y", function(d){
                   if (d.quadrant == 3 || d.quadrant == 4){
-                      return d.size / 4 * 3;
+                      return d.size / 2;
                   }else{
-                      return d.size / 4;
+                      return 0;
                   }
                 })                
-              .attr("fill", "blue");      
+              .attr("fill", "blue");       
 
 
         </script>
