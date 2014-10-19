@@ -1,20 +1,18 @@
 # Name
 
-write-your-name
+Niklas Fejes
 
 # How many points have you earned?
 
-0/100
-
-(Make your own calculation and replace the number 0 with the points you think you've earned.)
+100/100
 
 # How many hours have you spent on this?
 
-fill-in-your-answer
+7 hours
 
 # What is the most difficult part about this week's challenge?
 
-fill-in-your-answer
+Challenge 3 - Implementing hand-drawn visualizations
 
 # Show and tell (6 points)
 
@@ -30,9 +28,13 @@ fill-in-your-answer
 
 ## 1 (5 points)
 
-![image](screenshots/checkpoint1.png?raw=true)
+![image](screenshots/checkpoint1a.png?raw=true)
+![image](screenshots/checkpoint1b.png?raw=true)
+![image](screenshots/checkpoint1c.png?raw=true)
 
-[checkpoint1](html/checkpoint1.html)
+[checkpoint1a](html/checkpoint1a.html)
+[checkpoint1b](html/checkpoint1b.html)
+[checkpoint1c](html/checkpoint1c.html)
 
 ## 2 (5 points)
 
