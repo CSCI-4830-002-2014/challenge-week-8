@@ -32,14 +32,14 @@ fill-in-your-answer
 
 ![image](images/cp1a.png?raw=true)
 
-[ch2a](cp1a.html)
+[cp1a](cp1a.html)
 
 ![image](images/cp1c.png?raw=true)
 
-[ch2c](cp1c.html)
+[cp1c](cp1c.html)
 ![image](images/cp1e.png?raw=true)
 
-[ch2e](cp1e.html)
+[cp1e](cp1e.html)
 
 ## 2 (5 points)
 
@@ -71,27 +71,27 @@ fill-in-your-answer
 
 ### 1.b. (5 points)
 
-![image](image/ch1b.png?raw=true)
+![image](images/ch1b.png?raw=true)
 
 [challenge1-b](ch1b.html)
 
 ### 1.c. (5 points)
 
-![image](image.png?raw=true)
+![image](images/ch1c.png?raw=true)
 
-[challenge1-c](checkpoint1-c.html)
+[challenge1-c](ch1d.html)
 
 ### 1.d. (5 points)
 
-![image](image.png?raw=true)
+![image](images/ch1d.png?raw=true)
 
-[challenge1-d](checkpoint1-d.html)
+[challenge1-d](ch1d.html)
 
 ## Challenge 2 (5 points x 6 = 30 points)
 
 ### 2.a. (5 points)
 
-![image](image.png?raw=true)
+![image](images/ch2a.png?raw=true)
 
 ### 2.b. (5 points)
 
