@@ -65,15 +65,15 @@ fill-in-your-answer
 
 ### 1.a. (5 points)
 
-![image](image.png?raw=true)
+![image](images/ch1a.png?raw=true)
 
-[challenge1-a](challenge1-a.html)
+[challenge1-a](ch1a.html)
 
 ### 1.b. (5 points)
 
-![image](image.png?raw=true)
+![image](image/ch1b.png?raw=true)
 
-[challenge1-b](checkpoint1-b.html)
+[challenge1-b](ch1b.html)
 
 ### 1.c. (5 points)
 
