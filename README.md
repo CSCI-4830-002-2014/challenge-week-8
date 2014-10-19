@@ -66,55 +66,55 @@ fill-in-your-answer
 
 ### 1.a. (5 points)
 
-![image](ch1a.png?raw=true)
+![image](img/ch1a.png?raw=true)
 
 [challenge1-a](ch1a.html)
 
 ### 1.b. (5 points)
 
-![image](ch1b.png?raw=true)
+![image](img/ch1b.png?raw=true)
 
 [challenge1-b](cp1b.html)
 
 ### 1.c. (5 points)
 
-![image](image.png?raw=true)
+![image](img/ch1c.png?raw=true)
 
-[challenge1-c](checkpoint1-c.html)
+[challenge1-c](ch1c.html)
 
 ### 1.d. (5 points)
 
-![image](image.png?raw=true)
+![image](img/ch1d.png?raw=true)
 
-[challenge1-d](checkpoint1-d.html)
+[challenge1-d](ch1d.html)
 
 ## Challenge 2 (5 points x 6 = 30 points)
 
 ### 2.a. (5 points)
 
-![image](image.png?raw=true)
+![image](img/ch2a.png?raw=true)
 
 ### 2.b. (5 points)
 
-![image](image.png?raw=true)
+![image](img/ch2b.png?raw=true)
 
 ### 2.c. (5 points)
 
-![image](image.png?raw=true)
+![image](img/ch2c.png?raw=true)
 
 ### 2.d. (5 points)
 
-![image](image.png?raw=true)
+![image](img/ch2d.png?raw=true)
 
 ### 2.e. (5 points)
 
-![image](image.png?raw=true)
+![image](img/ch2e.png?raw=true)
 
 ### 2.f. (5 points)
 
-![image](image.png?raw=true)
+![image](img/ch2f.png?raw=true)
 
-[challenge2](checkpoint2.html)
+[challenge2](ch2.html)
 
 ## Challenge 3 (8 points x 3 = 24 points)
 

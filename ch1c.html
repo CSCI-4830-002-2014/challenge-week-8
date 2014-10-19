@@ -9,7 +9,7 @@
     </style>
   </head>
   <body>
-    <h1> Relationship between size (x) and fork_count (y) of CSCI 4830 Repos </h1>
+    <h1> Relationship between size (x) and fork_count (y) of CSCI 4830 Repos (Open Issues ~ Size) </h1>
     <script type="text/javascript">
 
       //Width and height
@@ -27,6 +27,10 @@
       var yScale = d3.scale.linear()
            .domain([0,d3.max(data, function(d) { return d.forks_count;})])
            .range([10, h-10]);
+
+      var rScale = d3.scale.linear()
+           .domain([0,d3.max(data, function(d) { return d.open_issues_count;})])
+           .range([2,5]);
 
       //Create SVG element
       var svg = d3.select("body")
@@ -46,7 +50,7 @@
              return yScale(d.forks_count);
          })
          .attr("r", function(d) {
-             return 10;
+             return rScale(d.open_issues_count);
          });
 
       svg.selectAll("text")

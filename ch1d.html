@@ -5,21 +5,43 @@
     <meta charset="utf-8">
     <title>D3 Scatterplot</title>
     <script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+    <script src="http://labratrevenge.com/d3-tip/javascripts/d3.tip.v0.6.3.js"></script>
     <style type="text/css">
     </style>
   </head>
   <body>
-    <h1> Relationship between size (x) and fork_count (y) of CSCI 4830 Repos </h1>
+    <h1> Relationship between size (x) and fork_count (y) of CSCI 4830 Repos (Open Issues ~ Size) </h1>
     <script type="text/javascript">
 
       //Width and height
       var w = 500;
       var h = 100;
 
-
       d3.json("https://api.github.com/orgs/csci-4830-002-2014/repos", function(error, dataset) {
         data = dataset;
 
+      var tip = d3.tip()
+        .attr('class', 'd3-tip')
+        .offset([-10, 0])
+        .html(function(d) {
+          return "<strong>Name:</strong> <span style='color:red'>" + d.name + "</span>" + " " +
+          "<strong>Desc:</strong>" + "<span style='color:red'>" + d.description + "</span>" + " " +
+          "<strong>Updated:</strong>" + "<span style='color:red'>" + d.updated_at + "</span>";
+        })
+/*
+      var tip = d3.tip()
+        .attr('class', 'd3-tip')
+        .offset([-10, 0])
+        .html(function(d) {
+          return "<strong>Name:</strong>
+          <span style='color:red'>" + d.name + "</span>
+          <strong>Private: </strong> <span style='color:red'>" + d.private + "</span>
+          <strong>Description: </strong>
+          <span style='color:red'>" + d.description + "</span>
+          <strong>Updated At: </strong>
+          <span style='color:red'>" + d.updated_at + "</span>";
+      });
+*/
       var xScale = d3.scale.linear()
            .domain([0,d3.max(data, function(d) { return d.size;})])
            .range([10, w-100]);
@@ -28,11 +50,17 @@
            .domain([0,d3.max(data, function(d) { return d.forks_count;})])
            .range([10, h-10]);
 
+      var rScale = d3.scale.linear()
+           .domain([0,d3.max(data, function(d) { return d.open_issues_count;})])
+           .range([2,5]);
+
       //Create SVG element
       var svg = d3.select("body")
             .append("svg")
             .attr("width", w)
             .attr("height", h);
+
+      svg.call(tip);
 
       svg.selectAll("circle")
          .data(dataset)
@@ -46,8 +74,10 @@
              return yScale(d.forks_count);
          })
          .attr("r", function(d) {
-             return 10;
-         });
+             return rScale(d.open_issues_count);
+         })
+         .on('mouseover',tip.show)
+         .on('mouseout', tip.hide);
 
       svg.selectAll("text")
          .data(dataset)
