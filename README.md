@@ -46,13 +46,13 @@ fill-in-your-answer
 
 ## 3 (5 points)
 
-![image](checkpoint3.png?raw=true)
+![image](checkpoint3.PNG?raw=true)
 
 [checkpoint3](checkpoint3.html)
 
 ## 4 (5 points)
 
-![image](checkpoint4.png?raw=true)
+![image](checkpoint4.PNG?raw=true)
 
 [checkpoint4](checkpoint4.html)
 
