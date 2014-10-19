@@ -15,8 +15,8 @@
             var pinWidth = 25;
 
             // URL (using temp to avoid github api limit)
-            var url = "https://rawgit.com/nfejes/challenge-week-8/master/html/repos.json";
-//          var url = "https://api.github.com/orgs/csci-4830-002-2014/repos";
+//          var url = "https://rawgit.com/nfejes/challenge-week-8/master/html/repos.json";
+            var url = "https://api.github.com/orgs/csci-4830-002-2014/repos";
 
             d3.json(url, function(error, dataset) {
                 if (error) console.log(error);
@@ -28,13 +28,13 @@
 
                 pinWidth = 0.2 * w / dataset.length;
                 maxSize  = w / dataset.length;
-
+/*
                 // Border
                 svg.append('rect')
                    .attr('width', w)
                    .attr('height', h)
                    .attr('style', 'fill:white; stroke:black; stroke-width:4');
-
+*/
                 // Scales
                 var sizeScale = d3.scale.linear()
                              .domain([0, d3.max(dataset, function(d) { return +d.size })])
@@ -67,7 +67,7 @@
                    .attr("x", w / (2 * dataset.length) - pinWidth/2)
                    .attr("y", function(d) { return h - 1 - forkScale(d.forks_count) - radius(d) })
                    .attr('style', 'stroke:black; stroke-width:2')
-                   .attr('fill', function(d) { return d.watchers == 0 ? 'white' : 'black' });
+                   .attr('fill', function(d) { return d.watchers == 0 ? 'white' : '#444' });
  
                 // Create circles
                 symbol.append("circle")

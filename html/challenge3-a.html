@@ -14,8 +14,8 @@
             var padding = 22;
 
             // URL (using temp to avoid github api limit)
-            var url = "https://rawgit.com/nfejes/challenge-week-8/master/html/repos.json";
-//          var url = "https://api.github.com/orgs/csci-4830-002-2014/repos";
+//          var url = "https://rawgit.com/nfejes/challenge-week-8/master/html/repos.json";
+            var url = "https://api.github.com/orgs/csci-4830-002-2014/repos";
 
             d3.json(url, function(error, dataset) {
                 if (error) console.log(error);
@@ -32,9 +32,6 @@
                    .attr('style', 'fill:white; stroke:black; stroke-width:4');
 
                 // Scales
-//              var sizeScale = d3.scale.linear()
-//                           .domain([0, d3.max(dataset, function(d) { return +d.size })])
-//                           .range([lpadding, w-rpadding]);
                 var forkScale = d3.scale.linear()
                              .domain([0, d3.max(dataset, function(d) { return +d.forks_count })])
                              .range([padding, w-padding]);

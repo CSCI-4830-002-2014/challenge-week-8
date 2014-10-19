@@ -46,8 +46,8 @@
             var tbpadding = 20;
 
             // URL (using temp to avoid github api limit)
-            var url = "https://rawgit.com/nfejes/challenge-week-8/master/html/repos.json";
-//          var url = "https://api.github.com/orgs/csci-4830-002-2014/repos";
+//          var url = "https://rawgit.com/nfejes/challenge-week-8/master/html/repos.json";
+            var url = "https://api.github.com/orgs/csci-4830-002-2014/repos";
 
             d3.json(url, function(error, dataset) {
                 if (error) console.log(error);
