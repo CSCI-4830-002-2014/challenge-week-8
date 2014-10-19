@@ -1,6 +1,6 @@
 # Name
 
-write-your-name
+Alexander Tsankov
 
 # How many points have you earned?
 
@@ -20,11 +20,11 @@ fill-in-your-answer
 
 ## Link (2 points)
 
-[title-of-the-article](http://link-to-an-example-of-big-data-visualization-in-a-public-space)
+[Interesting Big Data visualization ](http://www.psfk.com/2014/10/grillz-algorithm-hip-hop-visualization-exhibit.html)
 
 ## Describe briefly the "motivation" and "intended audience" of this public visualization (4 points).
 
-fill-in-your-answer
+She 3d printed teeth girlls based on infromation from lyrics from different hip hop musicians.
 
 # Checkpoints (5 points x 4 = 20 points)
 
