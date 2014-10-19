@@ -44,7 +44,7 @@ She 3d printed teeth girlls based on infromation from lyrics from different hip 
 
 ## 2 (5 points)
 
-![image](chp-2.png)
+![image](cp-2.png)
 
 [checkpoint2](cp2.html)
 
@@ -92,11 +92,11 @@ She 3d printed teeth girlls based on infromation from lyrics from different hip 
 
 ### 2.a. (5 points)
 
-![image](image.png?raw=true)
+![image](ch-2a.png)
 
 ### 2.b. (5 points)
 
-![image](image.png?raw=true)
+![image](ch-2b.png)
 
 ### 2.c. (5 points)
 
