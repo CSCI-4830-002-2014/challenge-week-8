@@ -1,20 +1,20 @@
 # Name
 
-write-your-name
+Michael Fyk
 
 # How many points have you earned?
 
-0/100
+100/100
 
 (Make your own calculation and replace the number 0 with the points you think you've earned.)
 
 # How many hours have you spent on this?
 
-fill-in-your-answer
+13
 
 # What is the most difficult part about this week's challenge?
 
-fill-in-your-answer
+Challenges 3b and 3c.
 
 # Show and tell (6 points)
 
@@ -30,27 +30,32 @@ fill-in-your-answer
 
 ## 1 (5 points)
 
-![image](image.png?raw=true)
+![image](Ch12a.png)
+![image](Ch12b.png)
+![image](Ch12c.png)
 
-[checkpoint1](checkpoint1.html)
+[checkpoint1](Ch12a.html)
+[checkpoint1](Ch12b.html)
+[checkpoint1](Ch12c.html)
 
 ## 2 (5 points)
 
-![image](image.png?raw=true)
+![image](Ch2.png)
 
-[checkpoint2](checkpoint2.html)
+[checkpoint2a](Ch2.html)
+
 
 ## 3 (5 points)
 
-![image](image.png?raw=true)
+![image](Ch3.png)
 
-[checkpoint3](checkpoint3.html)
+[checkpoint3](Ch3.html)
 
 ## 4 (5 points)
 
-![image](image.png?raw=true)
+![image](Ch4.png)
 
-[checkpoint4](checkpoint4.html)
+[checkpoint4](Ch4.html)
 
 # Challenges
 
@@ -58,72 +63,72 @@ fill-in-your-answer
 
 ### 1.a. (5 points)
 
-![image](image.png?raw=true)
+![image](C1a.png)
 
-[challenge1-a](challenge1-a.html)
+[challenge1-a](C1a.html)
 
 ### 1.b. (5 points)
 
-![image](image.png?raw=true)
+![image](C1b.png)
 
-[challenge1-b](checkpoint1-b.html)
+[challenge1-b](C1b.html)
 
 ### 1.c. (5 points)
 
-![image](image.png?raw=true)
+![image](C1c.png)
 
-[challenge1-c](checkpoint1-c.html)
+[challenge1-c](C1c.html)
 
 ### 1.d. (5 points)
 
-![image](image.png?raw=true)
+![image](C1d.png)
 
-[challenge1-d](checkpoint1-d.html)
+[challenge1-d](C1d.html)
 
 ## Challenge 2 (5 points x 6 = 30 points)
 
 ### 2.a. (5 points)
 
-![image](image.png?raw=true)
+![image](C2a.png)
 
 ### 2.b. (5 points)
 
-![image](image.png?raw=true)
+![image](C2b.png)
 
 ### 2.c. (5 points)
 
-![image](image.png?raw=true)
+![image](C2c.png)
 
 ### 2.d. (5 points)
 
-![image](image.png?raw=true)
+![image](C2d.png)
 
 ### 2.e. (5 points)
 
-![image](image.png?raw=true)
+![image](C2e.png)
 
 ### 2.f. (5 points)
 
-![image](image.png?raw=true)
+![image](C2f.png)
 
-[challenge2](checkpoint2.html)
+[challenge2](C2f.html)
 
 ## Challenge 3 (8 points x 3 = 24 points)
 
 ### 3.a. (8 points)
 
-![image](image.png?raw=true)
+![image](C3a.png)
 
-[challenge3-a](checkpoint3-a.html)
+[challenge3-a](C3a.html)
 
 ### 3.b. (8 points)
 
-![image](image.png?raw=true)
+![image](C3b.png)
 
-[challenge3-b](checkpoint3-b.html)
+[challenge3-b](C3b.html)
 
 ### 3.c. (8 points)
 
-![image](image.png?raw=true)
+![image](C3c.png)
 
-[challenge3-c](checkpoint3-c.html)
+[challenge3-c](C3c.html)
