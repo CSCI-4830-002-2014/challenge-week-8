@@ -4,27 +4,27 @@ Irfan Nadiadi
 
 # How many points have you earned?
 
-0/100
+41/100
 
 (Make your own calculation and replace the number 0 with the points you think you've earned.)
 
 # How many hours have you spent on this?
 
-fill-in-your-answer
+5
 
 # What is the most difficult part about this week's challenge?
 
-fill-in-your-answer
+Working with d3 is not too hard, but it really takes quite a lot of time. I have quite a lot of other work to do and was unable to finish this.
 
 # Show and tell (6 points)
 
 ## Link (2 points)
 
-[title-of-the-article](http://link-to-an-example-of-big-data-visualization-in-a-public-space)
+[eCLOUD](http://www.ecloudproject.com/)
 
 ## Describe briefly the "motivation" and "intended audience" of this public visualization (4 points).
 
-fill-in-your-answer
+The eCLOUD is an art installation in San Jose International Airport, which features many polycarbonate tiles that fade from transparent to opaque states. The different tiles are activated by real-time weather data from around the world. The installation acts as art more so than a functional representation of the data, but it is still an interesting way to physically represent data. 
 
 # Checkpoints (5 points x 4 = 20 points)
 
