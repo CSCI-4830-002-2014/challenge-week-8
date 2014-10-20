@@ -89,11 +89,11 @@ Buildings are being outfitted in dashboards with a display about the "green-ness
 
 ### 2.a. (5 points)
 
-![image](image.png?raw=true)
+![image](http://i.imgur.com/SChIdvg.png)
 
 ### 2.b. (5 points)
 
-![image](image.png?raw=true)
+![image](http://i.imgur.com/rKIUpi5.png)
 
 ### 2.c. (5 points)
 
