@@ -4,7 +4,7 @@ Alexander Tsankov
 
 # How many points have you earned?
 
-41/100
+51/100
 
 (Make your own calculation and replace the number 0 with the points you think you've earned.)
 
