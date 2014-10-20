@@ -20,7 +20,7 @@ The visualizations make no sense. The point is for a visualization to be able to
 
 ## Link (2 points)
 
-[title-of-the-article](http://link-to-an-example-of-big-data-visualization-in-a-public-space)
+[title-of-the-article](http://google.com)
 
 ## Describe briefly the "motivation" and "intended audience" of this public visualization (4 points).
 
