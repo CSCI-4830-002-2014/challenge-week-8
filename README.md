@@ -1,20 +1,20 @@
 # Name
 
-write-your-name
+Peyman Mortazavi
 
 # How many points have you earned?
 
-0/100
+90/100
 
 (Make your own calculation and replace the number 0 with the points you think you've earned.)
 
 # How many hours have you spent on this?
 
-fill-in-your-answer
+10 hours
 
 # What is the most difficult part about this week's challenge?
 
-fill-in-your-answer
+It was so long !
 
 # Show and tell (6 points)
 
@@ -30,9 +30,13 @@ fill-in-your-answer
 
 ## 1 (5 points)
 
-![image](image.png?raw=true)
+![image](https://dl.dropboxusercontent.com/u/44502811/Big%20Data%20ScreenShots/Week%208/checkpoint1-a.png)
+![image](https://dl.dropboxusercontent.com/u/44502811/Big%20Data%20ScreenShots/Week%208/checkpoint1-b.png)
+![image](https://dl.dropboxusercontent.com/u/44502811/Big%20Data%20ScreenShots/Week%208/checkpoint1-c.png)
 
-[checkpoint1](checkpoint1.html)
+[checkpoint1](checkpoint1-a.html)
+[checkpoint1](checkpoint1-b.html)
+[checkpoint1](checkpoint1-c.html)
 
 ## 2 (5 points)
 

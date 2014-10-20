@@ -38,6 +38,8 @@
 					var rScale = d3.scale.linear()
 										 .domain([0, d3.max(data, function(d) { return d.forks_count; })])
 										 .range([2, 5]);
+
+					var colorScale = d3.scale.linear().domain([0, d3.max(data, function(d) { return d.open_issues_count; } )]).range([0,1]);
 			
 					//Create SVG element
 					var svg = d3.select("body")
@@ -57,7 +59,8 @@
 					   })
 					   .attr("r", function(d) {
 					   		return rScale(d.forks_count);
-					   });
+					   })
+					   .style("opacity", function(d){return colorScale(d.open_issues_count);});
 
 					svg.selectAll("text")
 					   .data(data)
@@ -77,10 +80,6 @@
 					   .attr("fill", "red");
 
 						});
-
-			//Create scale functions
-
-			
 		</script>
 	</body>
 </html>

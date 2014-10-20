@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>D3: Scaled scatterplot, resized to be bigger!</title>
+      <script type="text/javascript" src="http://d3js.org/d3.v3.min.js"></script>
+  </head>
+  <body>
+    <script type="text/javascript">
+      var w = 1400;
+      var h = 600;
+      var padding = 40;
+      
+      d3.json("https://api.github.com/orgs/csci-4830-002-2014/repos", function(error, dataset) {
+      //Create scale functions
+      var barScale = d3.scale.linear()
+                 .domain([0, d3.max(dataset, function(d) { return d.forks_count; })])
+                 .range([padding + 120 , h - padding * 2 ]);
+
+      var rScale = d3.scale.linear()
+                 .domain([0, d3.max(dataset, function(d) { return d.size; })])
+                 .range([20, 39]);
+      var oScale = d3.scale.linear()
+      .domain([0, d3.max(dataset, function (d) { return d.open_issues; })])
+      //Create SVG element
+      var svg = d3.select("body")
+            .append("svg")
+            .attr("width", w)
+            .attr("height", h);
+      symbol = svg.selectAll("g")
+        .data(dataset)
+        .enter()
+        .append("g")
+
+      symbol.append("rect")
+        .attr("height", function (d) { return h - barScale(d.forks_count); })
+        .attr("width", 20)
+        .attr("x", function(d, i) {return i * 45}) 
+        .attr("y", function (d) {return barScale(d.forks_count)})
+        .attr("fill", function (d) {
+          if (d.watchers){
+            return "black";
+          }
+          else return "gray";
+          });
+
+      symbol.append("circle")
+        .attr("r", function(d){
+            return rScale(d.size/2);
+          })
+        .attr("cx", function(d,i){
+          return i * 45 + 10;}) 
+        
+        .attr("cy", function(d){
+          return barScale(d.forks_count);
+        })
+        .attr("fill", "orange");
+      });      
+    </script>
+  </body>
+</html>
