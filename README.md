@@ -66,27 +66,27 @@ fill-in-your-answer
 
 ### 1.a. (5 points)
 
-![image](image.png?raw=true)
+![image](challenge1a.png?raw=true)
 
-[challenge1-a](challenge1-a.html)
+[challenge1-a](challenge1a.html)
 
 ### 1.b. (5 points)
 
-![image](image.png?raw=true)
+![image](challenge1b.png?raw=true)
 
-[challenge1-b](checkpoint1-b.html)
+[challenge1-b](challenge1b.html)
 
 ### 1.c. (5 points)
 
-![image](image.png?raw=true)
+![image](challenge1c.png?raw=true)
 
-[challenge1-c](checkpoint1-c.html)
+[challenge1-c](challenge1c.html)
 
 ### 1.d. (5 points)
 
-![image](image.png?raw=true)
+![image](challenge1d.png?raw=true)
 
-[challenge1-d](checkpoint1-d.html)
+[challenge1-d](challenge1d.html)
 
 ## Challenge 2 (5 points x 6 = 30 points)
 
