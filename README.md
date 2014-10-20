@@ -1,6 +1,6 @@
 # Name
 
-write-your-name
+Nikita Voskoboynik
 
 # How many points have you earned?
 
@@ -20,17 +20,19 @@ fill-in-your-answer
 
 ## Link (2 points)
 
-[title-of-the-article](http://link-to-an-example-of-big-data-visualization-in-a-public-space)
+[These beautiful works of art were made using algorithms](http://qz.com/278645/these-beautiful-works-of-art-were-made-using-algorithms/)
 
 ## Describe briefly the "motivation" and "intended audience" of this public visualization (4 points).
 
-fill-in-your-answer
+The motivation for these works is Shneiderman’s interest in blending technology with art. The intended audience are both artists and scientists.
 
 # Checkpoints (5 points x 4 = 20 points)
 
 ## 1 (5 points)
 
-![image](image.png?raw=true)
+Challenge 2-a: [Imgur](http://i.imgur.com/Z91cLVr.png)
+Challenge 2-c: [Imgur](http://i.imgur.com/AhKvLZ7.png)
+Challenge 2-e: [Imgur](http://i.imgur.com/s3IfGo8.png)
 
 [checkpoint1](checkpoint1.html)
 
