@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>D3</title>
+<script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/d3/3.4.12/d3.min.js"></script>
+<style type="text/css">
+</style>
+</head>
+<body>
+<script type="text/javascript">
+var w = 800;
+var h = 400;
+var margin = 100;
+var dotSize = 20;
+d3.json("https://api.github.com/orgs/csci-4830-002-2014/repos", function(error, dataset) {
+	data = dataset;
+
+	var svg = d3.select("body")
+		.append("svg")
+		.attr("width", w)
+		.attr("height", h);
+
+	var yScale = d3.scale.linear()
+		.domain([0, d3.max(dataset.map(function(d) { return d.open_issues_count; }))])
+		.range([margin, h - margin]);
+
+	var xScale = d3.scale.linear()
+		.domain([0, d3.max(dataset.map(function(d) { return d.forks_count; }))])
+		.range([margin, w - margin]);
+
+		symbol = svg.selectAll("g")
+			.data(dataset)
+			.enter()
+			.append("g")
+			.attr("transform", function(d, i) {
+					return "translate(" + xScale(d.forks_count) + "," + yScale(d.open_issues_count) +")";
+					});
+
+		symbol.append("circle")
+			.attr("r", function(d){ return dotSize;	})
+			.attr("cx", function(d){ return dotSize/2; })
+			.attr("cy", function(d){ return dotSize/2; })
+			.attr("fill", "steelblue");
+
+		symbol.append("text")
+			.attr("dx", function(d){return 0})
+			.attr("dy", function(d){return 15})
+			.text(function(d){return d.name.charAt(0)})
+			.style("font-size","29px")
+
+		symbol.append("line")
+			.attr("x1", function(d) { return -xScale(d.forks_count)})
+			.attr("y1", function(d) { return -yScale(d.open_issues_count)})
+			.attr("x2", function(d) { return dotSize/2})
+			.attr("y2", function(d) { return dotSize/2})
+			.attr("stroke-width", 2)
+			.attr("stroke", "black");
+})
+
+
+
+</script>
+</body>
+</html>
+
