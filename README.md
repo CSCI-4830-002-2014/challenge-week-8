@@ -9,18 +9,17 @@ Jake Charland
 (Make your own calculation and replace the number 0 with the points you think you've earned.)
 
 # How many hours have you spent on this?
-
-fill-in-your-answer
+6
 
 # What is the most difficult part about this week's challenge?
 
-fill-in-your-answer
+Challenge 3.
 
 # Show and tell (6 points)
 
 ## Link (2 points)
 
-[title-of-the-article](http://link-to-an-example-of-big-data-visualization-in-a-public-space)
+[Threatened and Endangered Wildlife and Plant Species](http://www-958.ibm.com/software/analytics/manyeyes/visualizations/threatened-and-endangered-wildlife)
 
 ## Describe briefly the "motivation" and "intended audience" of this public visualization (4 points).
 
