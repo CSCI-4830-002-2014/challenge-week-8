@@ -1,56 +1,64 @@
 # Name
 
-write-your-name
+Irfan Nadiadi
 
 # How many points have you earned?
 
-0/100
+41/100
 
 (Make your own calculation and replace the number 0 with the points you think you've earned.)
 
 # How many hours have you spent on this?
 
-fill-in-your-answer
+5
 
 # What is the most difficult part about this week's challenge?
 
-fill-in-your-answer
+Working with d3 is not too hard, but it really takes a lot of time. I have quite a lot of other work to do and was unable to finish this.
 
 # Show and tell (6 points)
 
 ## Link (2 points)
 
-[title-of-the-article](http://link-to-an-example-of-big-data-visualization-in-a-public-space)
+[eCLOUD](http://www.ecloudproject.com/)
 
 ## Describe briefly the "motivation" and "intended audience" of this public visualization (4 points).
 
-fill-in-your-answer
+The eCLOUD is an art installation in San Jose International Airport, which features many polycarbonate tiles that fade from transparent to opaque states. The different tiles are activated by real-time weather data from around the world. The installation acts as art more so than a functional representation of the data, but it is still an interesting way to physically represent data. 
 
 # Checkpoints (5 points x 4 = 20 points)
 
 ## 1 (5 points)
 
-![image](image.png?raw=true)
+![image](checkpoints/1a.png)
 
-[checkpoint1](checkpoint1.html)
+[checkpoint1 (2a)](check1a.html)
+
+![image](checkpoints/1c.png)
+
+[checkpoint1 (2c)](check1c.html)
+
+![image](checkpoints/1e.png)
+
+[checkpoint1 (2e)](check1e.html)
 
 ## 2 (5 points)
 
-![image](image.png?raw=true)
+![image](checkpoints/2.png)
 
-[checkpoint2](checkpoint2.html)
+[checkpoint2](check2.html)
 
 ## 3 (5 points)
 
-![image](image.png?raw=true)
+![image](checkpoints/3.png)
 
-[checkpoint3](checkpoint3.html)
+[checkpoint3](check3.html)
 
 ## 4 (5 points)
 
-![image](image.png?raw=true)
+![image](checkpoints/4.png)
 
-[checkpoint4](checkpoint4.html)
+[checkpoint4](check4.html)
 
 # Challenges
 
@@ -58,21 +66,21 @@ fill-in-your-answer
 
 ### 1.a. (5 points)
 
-![image](image.png?raw=true)
+![image](challenges/1a.png)
 
-[challenge1-a](challenge1-a.html)
+[challenge1-a](1a.html)
 
 ### 1.b. (5 points)
 
-![image](image.png?raw=true)
+![image](challenges/1b.png)
 
-[challenge1-b](checkpoint1-b.html)
+[challenge1-b](1b.html)
 
 ### 1.c. (5 points)
 
-![image](image.png?raw=true)
+![image](challenges/challenge1c.png)
 
-[challenge1-c](checkpoint1-c.html)
+[challenge1-c](1c.html)
 
 ### 1.d. (5 points)
 
