@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>D3</title>
+<script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+<script src="http://labratrevenge.com/d3-tip/javascripts/d3.tip.v0.6.3.js"></script>
+        <link rel="stylesheet" type="text/css" href="c1.css">
+    </head>
+    <body>
+
+<div class="chart"></div>
+
+
+
+        <script type="text/javascript">
+            var w = 500;
+            var h = 1000;     
+
+
+            d3.json("https://api.github.com/orgs/csci-4830-002-2014/repos",
+                function(error, data) {
+                  dataset = data;
+
+
+   var xScale = d3.scale.linear()
+           .domain([0,d3.max(dataset, function(d) { return d.forks_count;})])
+           .range([10, 500]);
+
+      var yScale = d3.scale.linear()
+           .domain([7,12])
+           .range([10, 700]);
+
+           var rScale = d3.scale.linear()
+           .domain([0,d3.max(dataset, function(d) { return d.size;})])
+           .range([10, 25]);
+
+ var svg = d3.select("body")
+            .append("svg")
+            .attr("width", w)
+            .attr("height", h);
+
+symbol = svg.selectAll("g")
+.data(data)
+              .enter()
+              .append("g")
+              .attr("transform", function(d, i) {
+                return "translate(" + xScale(d.x) + "," + yScale(d.y) +")";
+              });
+
+
+         symbol.append("rect")
+    .attr("width", function(d,i){
+        return 200;
+    })
+    .attr("height", function(d,i){
+        return 20; 
+    })                
+    .attr("x", function(d){
+        return 300; 
+    })
+    .attr("y", function(d, i){
+        return 20 + 30* i; 
+    })                
+  .attr("fill", function(d, i){
+    if (d.watchers == 0){return "black"}; 
+
+     symbol.append("text")
+         .text(function(d) {
+             return d.name;
+         })
+         .attr("x", function(d) {
+             return 305;
+         })
+         .attr("y", function(d, i) {
+             return 30 + 30* i;
+         })
+         .attr("font-family", "sans-serif")
+         .attr("font-size", "11px")
+         .attr("fill", "white");
+
+         symbol.append("rect")
+         .attr("width", function(d) {
+             return 150;
+         })
+         .attr("height", function(d) {
+             return 35;
+         })
+         .attr("x", function(d) {
+             return 100;
+         })
+         .attr("y", function(d, i) {
+             return yScale(parseInt(d.created_at.toString().substring(5,7)));
+         })
+         .attr("font-family", "sans-serif")
+         .attr("font-size", "11px")
+         .attr("fill", "black");
+
+         symbol.append("text")
+         .text(function(d) {
+             return "2014 - " + d.created_at.toString().substring(5,7);
+         })
+         .attr("x", function(d) {
+             return 150;
+         })
+         .attr("y", function(d, i) {
+             return yScale(parseInt(d.created_at.toString().substring(5,7))) +20;
+         })
+         .attr("font-family", "sans-serif")
+         .attr("font-size", "11px")
+         .attr("fill", "white");
+
+         symbol.append("line")
+  .attr("x1", function (d){
+      return 305;// TODO
+  })
+  .attr("y1", function (d, i){
+      return 30 + 30* i;// TODO
+  })
+  .attr("x2", function (d,i){
+     return 200; // TODO
+  })
+  .attr("y2", function (d,i){
+      return yScale(parseInt(d.created_at.toString().substring(5,7))) +20; // TODO
+  })               
+  .attr("stroke-width", 2)
+  .attr("stroke", "black");
+
+  });
+
+
+
+         
+ 
+
+})
+
+
+        </script>
+
+
+    </body>
+</html>

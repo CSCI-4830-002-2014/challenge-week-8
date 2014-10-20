@@ -1,0 +1,41 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+</head>
+
+<svg class="chart"></svg>
+
+	<body>
+
+		<script type="text/javascript">
+//Width and height
+			 var w = 600;
+            var h = 600;                    
+           
+            var data = [43, 23, 13, 54, 23, 9, 52, 20]
+            
+            var svg = d3.select("body")          
+                        .append("svg")
+                        .attr("width", w)
+                        .attr("height", h);
+ 
+            svg.selectAll("line")
+              .data(data)
+              .enter()
+              .append("line")               
+              .attr("x1", function (d,i) {return 5 + 50*i;})
+              .attr("y1", function (d,i){
+                  return 0;})
+              .attr("y2", function (d,i){
+                  return d;})
+              .attr("x2", function (d,i){
+                  return 5 + 50*i;
+              })
+              .attr("stroke-width", 2)
+              .attr("stroke", "black");
+
+		</script>
+	</body>
+</html>
