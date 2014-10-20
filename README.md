@@ -4,13 +4,13 @@ Daniel Nolan
 
 # How many points have you earned?
 
-0/100
+100/100
 
 (Make your own calculation and replace the number 0 with the points you think you've earned.)
 
 # How many hours have you spent on this?
 
-5
+12
 
 # What is the most difficult part about this week's challenge?
 
@@ -66,25 +66,25 @@ The motivation behind this was to link Excel files relative to geographic locati
 
 ### 1.a. (5 points)
 
-![image](image.png?raw=true)
+![image](http://imgur.com/4gtjnYL.png)
 
 [challenge1-a](challenge1-a.html)
 
 ### 1.b. (5 points)
 
-![image](image.png?raw=true)
+![image](http://imgur.com/WjgGXRu.png)
 
 [challenge1-b](checkpoint1-b.html)
 
 ### 1.c. (5 points)
 
-![image](image.png?raw=true)
+![image](http://imgur.com/cVv0wDG.png)
 
 [challenge1-c](checkpoint1-c.html)
 
 ### 1.d. (5 points)
 
-![image](image.png?raw=true)
+![image](http://imgur.com/TeecdEj.png)
 
 [challenge1-d](checkpoint1-d.html)
 
