@@ -74,19 +74,19 @@ The motivation of this visualization was to clear up misconceptions about the fe
 
 ![image](chal2.png?raw=true)
 
-[challenge1-b](chal2-b.html)
+[challenge1-b](chal2.html)
 
 ### 1.c. (5 points)
 
-![image](chal3.png?raw=true)
+![image](chal2.png?raw=true)
 
-[challenge1-c](checkpoint1-c.html)
+[challenge1-c](chal2.html)
 
 ### 1.d. (5 points)
 
-![image](image.png?raw=true)
+![image](chal1d.png?raw=true)
 
-[challenge1-d](checkpoint1-d.html)
+[challenge1-d](chal3.html)
 
 ## Challenge 2 (5 points x 6 = 30 points)
 
