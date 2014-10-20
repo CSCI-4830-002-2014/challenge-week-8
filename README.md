@@ -72,7 +72,7 @@ The eCLOUD is an art installation in San Jose International Airport, which featu
 
 ### 1.b. (5 points)
 
-![image](challenges/1b.html)
+![image](challenges/1b.png)
 
 [challenge1-b](1b.html)
 
