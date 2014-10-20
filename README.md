@@ -1,6 +1,6 @@
 # Name
 
-write-your-name
+Alexia Newgord
 
 # How many points have you earned?
 
@@ -20,37 +20,52 @@ fill-in-your-answer
 
 ## Link (2 points)
 
-[title-of-the-article](http://link-to-an-example-of-big-data-visualization-in-a-public-space)
+[The art of big data.](http://www.itworld.com/article/2718862/big-data/the-art-of-big-data.html)
 
 ## Describe briefly the "motivation" and "intended audience" of this public visualization (4 points).
 
-fill-in-your-answer
+This article contains a TedTalk by Jer Thorp. Thorp converts data into emotional forms of art.  He believes that doing this gives it “meaning.” Visualizing the data graphically, interactively, and over time in a certain way can give the data a human context.  Individuals can and should relate to this data because it shows us our own relationship with humans and society.
+
+Thorp helped create an open-source tool called “Processing,” which helps create visualization.
+
+Unlike most big data visualizations, which are directed towards businesses or developers, the intended audience of this “art” is your “everyday” person.
 
 # Checkpoints (5 points x 4 = 20 points)
 
 ## 1 (5 points)
 
-![image](image.png?raw=true)
+Part 1:
+![image](cp1-1.png?raw=true)
 
-[checkpoint1](checkpoint1.html)
+[checkpoint1](cp1-1.html)
+
+Part 2:
+![image](cp1-2.png?raw=true)
+
+[checkpoint1](cp1-2.html)
+
+Part 3:
+![image](cp1-3.png?raw=true)
+
+[checkpoint1](cp1-3.html)
 
 ## 2 (5 points)
 
-![image](image.png?raw=true)
+![image](cp2.png?raw=true)
 
-[checkpoint2](checkpoint2.html)
+[checkpoint2](cp2.html)
 
 ## 3 (5 points)
 
-![image](image.png?raw=true)
+![image](cp3.png?raw=true)
 
-[checkpoint3](checkpoint3.html)
+[checkpoint3](cp3.html)
 
 ## 4 (5 points)
 
-![image](image.png?raw=true)
+![image](cp4.png?raw=true)
 
-[checkpoint4](checkpoint4.html)
+[checkpoint4](cp4.html)
 
 # Challenges
 
@@ -58,72 +73,72 @@ fill-in-your-answer
 
 ### 1.a. (5 points)
 
-![image](image.png?raw=true)
+![image](c1a.png?raw=true)
 
-[challenge1-a](challenge1-a.html)
+[challenge1-a](c1a.html)
 
 ### 1.b. (5 points)
 
-![image](image.png?raw=true)
+![image](c1b.png?raw=true)
 
-[challenge1-b](checkpoint1-b.html)
+[challenge1-b](c1b.html)
 
 ### 1.c. (5 points)
 
-![image](image.png?raw=true)
+![image](c1c.png?raw=true)
 
-[challenge1-c](checkpoint1-c.html)
+[challenge1-c](c1c.html)
 
 ### 1.d. (5 points)
 
-![image](image.png?raw=true)
+![image](c1d.png?raw=true)
 
-[challenge1-d](checkpoint1-d.html)
+[challenge1-d](c1d.html)
 
 ## Challenge 2 (5 points x 6 = 30 points)
 
 ### 2.a. (5 points)
 
-![image](image.png?raw=true)
+![image](c2a.png?raw=true)
 
 ### 2.b. (5 points)
 
-![image](image.png?raw=true)
+![image](c2b.png?raw=true)
 
 ### 2.c. (5 points)
 
-![image](image.png?raw=true)
+![image](c2c.png?raw=true)
 
 ### 2.d. (5 points)
 
-![image](image.png?raw=true)
+![image](c2d.png?raw=true)
 
 ### 2.e. (5 points)
 
-![image](image.png?raw=true)
+![image](c2e.png?raw=true)
 
 ### 2.f. (5 points)
 
-![image](image.png?raw=true)
+![image](c2f.png?raw=true)
 
-[challenge2](checkpoint2.html)
+[challenge2](c2.html)
 
 ## Challenge 3 (8 points x 3 = 24 points)
 
 ### 3.a. (8 points)
 
-![image](image.png?raw=true)
+![image](c3a.png?raw=true)
 
-[challenge3-a](checkpoint3-a.html)
+[challenge3-a](c3a.html)
 
 ### 3.b. (8 points)
 
-![image](image.png?raw=true)
+![image](c3b.png?raw=true)
 
-[challenge3-b](checkpoint3-b.html)
+[challenge3-b](c3b.html)
 
 ### 3.c. (8 points)
 
-![image](image.png?raw=true)
+![image](c3c.png?raw=true)
 
-[challenge3-c](checkpoint3-c.html)
+[challenge3-c](c3c.html)
