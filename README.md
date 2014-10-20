@@ -31,12 +31,12 @@ fill-in-your-answer
 ## 1 (5 points)
 
 ![image](Ch12a.png)
-![image](Ch12b.png)
 ![image](Ch12c.png)
+![image](Ch12e.png)
 
-[checkpoint1](Ch12a.html)
-[checkpoint1](Ch12b.html)
-[checkpoint1](Ch12c.html)
+[checkpoint1a](Ch12a.html)
+[checkpoint1c](Ch12c.html)
+[checkpoint1e](Ch12e.html)
 
 ## 2 (5 points)
 
@@ -109,7 +109,7 @@ fill-in-your-answer
 
 ### 2.f. (5 points)
 
-![image](C2f.png)
+![image](c2f.png)
 
 [challenge2](C2f.html)
 
