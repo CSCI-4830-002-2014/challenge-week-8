@@ -20,11 +20,11 @@ Challenges 3b and 3c.
 
 ## Link (2 points)
 
-[title-of-the-article](http://link-to-an-example-of-big-data-visualization-in-a-public-space)
+[Eastern States Exposition](http://www.prospericity.net/wp-content/uploads/2014/07/Eastern-State-Display.jpg)
 
 ## Describe briefly the "motivation" and "intended audience" of this public visualization (4 points).
 
-fill-in-your-answer
+The chart was put up at the Eastern-States Exhibition in Massachusetts for tourists and local visitors. The graph shows incarceration rates increasing dramatically over the past thirty years, and while the motivations for the graph may have been political, they may just be to proivde interesting facts to visitors.
 
 # Checkpoints (5 points x 4 = 20 points)
 
