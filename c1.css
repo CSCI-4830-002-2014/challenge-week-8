@@ -1,0 +1,16 @@
+.chart div {
+  font: 10px sans-serif;
+  background-color: black;
+  text-align: right;
+  padding: 3px;
+  margin: 1px;
+  color: white;
+}
+
+.chart p {
+  text-align: left;
+}
+
+.chart  {
+  background-color: steelblue;
+}

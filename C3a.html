@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>D3</title>
+<script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+<script src="http://labratrevenge.com/d3-tip/javascripts/d3.tip.v0.6.3.js"></script>
+        <link rel="stylesheet" type="text/css" href="c1.css">
+    </head>
+    <body>
+
+<div class="chart"></div>
+
+
+
+        <script type="text/javascript">
+            var w = 1500;
+            var h = 300;     
+
+
+            d3.json("https://api.github.com/orgs/csci-4830-002-2014/repos",
+                function(error, data) {
+                  dataset = data;
+
+
+   var xScale = d3.scale.linear()
+           .domain([0,d3.max(dataset, function(d) { return d.forks_count;})])
+           .range([10, 500]);
+
+      var yScale = d3.scale.linear()
+           .domain([0,d3.max(dataset, function(d) { return d.open_issues_count;})])
+           .range([10, 280]);
+
+           var rScale = d3.scale.linear()
+           .domain([0,d3.max(dataset, function(d) { return d.open_issues_count;})])
+           .range([1, 15]);
+
+ var svg = d3.select("body")
+            .append("svg")
+            .attr("width", w)
+            .attr("height", h);
+
+symbol = svg.selectAll("g")
+.data(data)
+              .enter()
+              .append("g")
+              .attr("transform", function(d, i) {
+                return "translate(" + xScale(d.x) + "," + yScale(d.y) +")";
+              });
+
+
+      svg.selectAll("circle")
+         .data(data)
+         .enter()
+         .append("circle")
+         .attr("cx", function(d) {
+             return xScale(d.forks_count);
+
+         })
+         .attr("cy", function(d) {
+             return yScale(d.open_issues_count);
+         })
+         .attr("r", function(d) {
+             return 10;
+         })
+
+         symbol.append("line")
+  .attr("x1", function (d){
+      return xScale(d.forks_count); // TODO
+  })
+  .attr("y1", function (d){
+      return yScale(d.open_issues_count); // TODO
+  })
+  .attr("x2", function (d,i){
+     return 0; // TODO
+  })
+  .attr("y2", function (d,i){
+      return 0; // TODO
+  })               
+  .attr("stroke-width", 2)
+  .attr("stroke", "black");
+
+
+      svg.selectAll("text")
+         .data(data)
+         .enter()
+         .append("text")
+         .text(function(d) {
+            if(d.name.toLowerCase().indexOf("hackathon") > -1){return "H"};
+            if(d.name.toLowerCase().indexOf("challenge") > -1){return "C"};
+         })
+         .attr("x", function(d) {
+             return xScale(d.forks_count) - 5;
+         })
+         .attr("y", function(d) {
+             return yScale(d.open_issues_count) + 3;
+         })
+         .attr("font-family", "sans-serif")
+         .attr("font-size", "11px")
+         .attr("fill", "white");
+            })
+
+
+
+        </script>
+
+
+    </body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>D3</title>
+<script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+        <link rel="stylesheet" type="text/css" href="c1.css">
+    </head>
+    <body>
+
+<div class="chart"></div>
+
+        <script type="text/javascript">
+            var w = 600;
+            var h = 600;                  
+
+
+            d3.json("https://api.github.com/orgs/csci-4830-002-2014/repos",
+                function(error, data) {
+                  dataset = data;
+
+var x = d3.scale.linear()
+    .domain([0, 40])
+    .range([0, 500]);
+
+d3.select(".chart")
+  .selectAll("div")
+    .data(dataset)
+  .enter().append("div")
+    .style("width", function(d) { return x(d.forks_count) + "px"; })
+    .text(function(d) { return d.name + " --- " + d.forks_count;});
+    });
+
+        </script>
+    </body>
+</html>
