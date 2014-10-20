@@ -1,6 +1,6 @@
 # Name
 
-write-your-name
+Daniel Nolan
 
 # How many points have you earned?
 
@@ -10,47 +10,55 @@ write-your-name
 
 # How many hours have you spent on this?
 
-fill-in-your-answer
+5
 
 # What is the most difficult part about this week's challenge?
 
-fill-in-your-answer
+Getting the html files to successfully open through Chrome took me a bit since little things in the Checkpoint codes were wrong. I got it fixed, but it took a while.
 
 # Show and tell (6 points)
 
 ## Link (2 points)
 
-[title-of-the-article](http://link-to-an-example-of-big-data-visualization-in-a-public-space)
+[Geoflow for Bing Maps](http://microsoft-news.com/microsoft-releases-geoflow-for-excel-a-3d-big-data-visualization-tool-built-on-bing-maps/)
 
 ## Describe briefly the "motivation" and "intended audience" of this public visualization (4 points).
 
-fill-in-your-answer
+The motivation behind this was to link Excel files relative to geographic locations to be used with Bing and create visualizations. Anyone can use it that is interested in visual statistics relating to geo-locations and whatever an individual's data is testing. 
 
 # Checkpoints (5 points x 4 = 20 points)
 
 ## 1 (5 points)
 
-![image](image.png?raw=true)
+![image](http://imgur.com/SflyPWK.png)
 
-[checkpoint1](checkpoint1.html)
+[checkpoint1](Checkpoint1a.html)
+
+![image](http://imgur.com/sRdOGaq.png)
+
+[checkpoint1](Checkpoint1c.html)
+
+![image](http://imgur.com/vO275vI.png)
+
+[checkpoint1](Checkpoint1e.html)
 
 ## 2 (5 points)
 
-![image](image.png?raw=true)
+![image](http://imgur.com/nhgP5wo.png)
 
-[checkpoint2](checkpoint2.html)
+[checkpoint2](Checkpoint2.html)
 
 ## 3 (5 points)
 
-![image](image.png?raw=true)
+![image](http://imgur.com/OTTvMQg.png)
 
-[checkpoint3](checkpoint3.html)
+[checkpoint3](Checkpoint3.html)
 
 ## 4 (5 points)
 
-![image](image.png?raw=true)
+![image](http://imgur.com/lrjlEY6.png)
 
-[checkpoint4](checkpoint4.html)
+[checkpoint4](Checkpoint4.html)
 
 # Challenges
 
