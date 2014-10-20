@@ -78,9 +78,9 @@ fill-in-your-answer
 
 ### 1.c. (5 points)
 
-![image](image.png?raw=true)
+![image](challenges/1c.png)
 
-[challenge1-c](checkpoint1-c.html)
+[challenge1-c](1c.html)
 
 ### 1.d. (5 points)
 
