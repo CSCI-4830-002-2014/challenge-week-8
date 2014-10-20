@@ -20,9 +20,14 @@ fill-in-your-answer
 
 ## Link (2 points)
 
-[title-of-the-article](http://link-to-an-example-of-big-data-visualization-in-a-public-space)
+[Artists Giving Big Data a New Purpose](http://www.dw.de/artists-give-big-data-a-new-purpose/a-17243460)
 
-## Describe briefly the "motivation" and "intended audience" of this public visualization (4 points).
+The purpose of the article is less about a specific installation, and more about
+the idea that Big Data, like art, needs to make sense to be consumed. However,
+large data sets are often unintutive for people, thus it is important to call on
+artists and creative types to give data 'meaning' by applying context and craft
+to the data sets.
+
 
 fill-in-your-answer
 
