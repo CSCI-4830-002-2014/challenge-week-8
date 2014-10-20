@@ -62,19 +62,19 @@ fill-in-your-answer
 
 ### 1.a. (5 points)
 
-![image](image.png?raw=true)
+![image](https://www.dropbox.com/s/q5pn6yled765aiv/Screenshot%202014-10-19%2022.08.20.png?dl=1)
 
 [challenge1-a](challenge1-a.html)
 
 ### 1.b. (5 points)
 
-![image](image.png?raw=true)
+![image](https://www.dropbox.com/s/4yrlcuvs0jg0ayx/Screenshot%202014-10-19%2023.09.23.png?dl=1)
 
 [challenge1-b](checkpoint1-b.html)
 
 ### 1.c. (5 points)
 
-![image](image.png?raw=true)
+![image](https://www.dropbox.com/s/w160jazejtiurge/Screenshot%202014-10-19%2023.12.52.png?dl=1)
 
 [challenge1-c](checkpoint1-c.html)
 
@@ -82,13 +82,18 @@ fill-in-your-answer
 
 ![image](image.png?raw=true)
 
-[challenge1-d](checkpoint1-d.html)
+Ummm.... Tip is ridiculously buggy. i.e.
 
-## Challenge 2 (5 points x 6 = 30 points)
+This seems to work:
+`tip = d3.tip().attr('class', 'd3-tip').html(function(d) { return d; });`
+Yet this doesn't:
+`var tip = d3.tip().attr('class', 'd3-tip').html(function(d) { return d; });`
+
+What gives?
 
 ### 2.a. (5 points)
 
-![image](image.png?raw=true)
+![image](https://www.dropbox.com/s/3nqvaj80eajczj1/Screenshot%202014-10-19%2023.46.49.png?dl=1)
 
 ### 2.b. (5 points)
 
