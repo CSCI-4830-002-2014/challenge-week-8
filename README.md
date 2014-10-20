@@ -100,7 +100,7 @@ This visualization was from a contest in order to show a general audience an exa
 
 ### 2.e. (5 points)
 
-![image](D3Challenge2e.png
+![image](D3Challenge2e.png)
 
 ### 2.f. (5 points)
 
