@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>D3: Scaled scatterplot, resized to be bigger!</title>
+      <script type="text/javascript" src="http://d3js.org/d3.v3.min.js"></script>
+    <style type="text/css">
+    </style>
+  </head>
+  <body>
+    <script type="text/javascript">
+
+      //Width and height
+      var w = 800;
+      var h = 600;
+      var padding = 20;
+
+      //var scaleFunction = d3.scale.linear().range([0, width]);
+      
+      // var dataset = [
+      //        [5, 20], [480, 90], [250, 50], [100, 33], [330, 95],
+      //        [410, 12], [475, 44], [25, 67], [85, 21], [220, 88],
+      //        [600, 150]
+      //        ];
+
+      d3.json("https://api.github.com/orgs/csci-4830-002-2014/repos",
+        function(error, data) {
+          
+          var xScale = d3.scale.linear()
+           .domain([0, d3.max(data, function(d) { return d.forks_count; })])
+           .range([padding, w - padding * 2]);
+
+          var yScale = d3.scale.linear()
+                     .domain([0, d3.max(data, function(d) { return d.open_issues_count; })])
+                     .range([h - padding, padding]);
+
+          // var rScale = d3.scale.linear()
+          //            .domain([0, d3.max(data, function(d) { return d.forks_count; })])
+          //            .range([2, 5]);
+      
+          //Create SVG element
+          var svg = d3.select("body")
+                .append("svg")
+                .attr("width", w)
+                .attr("height", h);
+
+          svg.selectAll("line")
+            .data(data)
+            .enter()
+            .append("line")
+            .attr("x1", function(d){ return 0; })
+            .attr("y1", function(d){ return 0; })
+            .attr("x2", function(d){ return xScale(d.forks_count); })
+            .attr("y2", function(d){ return yScale(d.open_issues_count); })
+            .attr("stroke-width", 1)
+            .attr("stroke", "black");
+
+          svg.selectAll("circle")
+             .data(data)
+             .enter()
+             .append("circle")
+             .attr("cx", function(d) {
+                return xScale(d.forks_count);
+             })
+             .attr("cy", function(d) {
+                return yScale(d.open_issues_count);
+             })
+             .attr("r", 10)
+             .style("fill", "#FF8000")
+             .style("opacity", "1.0")
+             .attr("stroke-width", 1)
+             .attr("stroke", "black");
+
+          svg.selectAll("text")
+             .data(data)
+             .enter()
+             .append("text")
+             .text(function(d) {
+                if(d.name.indexOf("challenge")>=0){
+                  debugger
+                  return "C";
+                }
+                else if(d.name.indexOf("hackathon")>=0)
+                {
+                  debugger
+                  return "H";
+                }
+                else{
+                  debugger
+                  return "";
+                }
+             })
+             .attr("x", function(d) {
+                return xScale(d.forks_count)-5;
+             })
+             .attr("y", function(d) {
+                return yScale(d.open_issues_count)+4;
+             })
+             .attr("font-family", "avenir")
+             .attr("font-size", "12px")
+             .attr("fill", "black");
+
+            });
+    </script>
+  </body>
+</html>
