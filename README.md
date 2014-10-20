@@ -119,9 +119,9 @@ fill-in-your-answer
 
 ### 3.a. (8 points)
 
-![image](image.png?raw=true)
+![image](images/ch3a.png?raw=true)
 
-[challenge3-a](checkpoint3-a.html)
+[challenge3-a](ch3a.html)
 
 ### 3.b. (8 points)
 
