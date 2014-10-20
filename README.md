@@ -106,19 +106,19 @@ What gives?
 
 ### 2.c. (5 points)
 
-![image](image.png?raw=true)
+![image](https://www.dropbox.com/s/cee1g0rcpeo9tw1/Screenshot%202014-10-20%2000.14.08.png?dl=1)
 
 ### 2.d. (5 points)
 
-![image](image.png?raw=true)
+![image](https://www.dropbox.com/s/bi8xz3gj9a2v7iz/Screenshot%202014-10-20%2000.21.53.png?dl=1)
 
 ### 2.e. (5 points)
 
-![image](image.png?raw=true)
+![image](https://www.dropbox.com/s/98n5dmyc1bm920v/Screenshot%202014-10-20%2000.30.27.png?dl=1)
 
 ### 2.f. (5 points)
 
-![image](image.png?raw=true)
+![image](https://www.dropbox.com/s/8wr9ogwfnbq85ct/Screenshot%202014-10-20%2000.33.21.png?dl=1)
 
 [challenge2](checkpoint2.html)
 
