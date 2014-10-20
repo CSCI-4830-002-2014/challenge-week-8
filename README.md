@@ -1,10 +1,10 @@
 # Name
 
-write-your-name
+Chris Wittenberg
 
 # How many points have you earned?
 
-0/100
+60/100
 
 (Make your own calculation and replace the number 0 with the points you think you've earned.)
 
@@ -20,35 +20,43 @@ fill-in-your-answer
 
 ## Link (2 points)
 
-[title-of-the-article](http://link-to-an-example-of-big-data-visualization-in-a-public-space)
+[Making Climate CHange Visual](http://visualizing.org/galleries/making-climate-change-visual)
 
 ## Describe briefly the "motivation" and "intended audience" of this public visualization (4 points).
 
-fill-in-your-answer
+The motivation Bryan Connor had for creating this data visualization is to give people and insightfull visulation that projects the problem of climate change through a variety of lenses; total emissions, emissions per capita, and gdp growth. He wants to show people how complex the issue of climate change really is. His intended audience are average, everyday people. 
 
 # Checkpoints (5 points x 4 = 20 points)
 
 ## 1 (5 points)
 
-![image](image.png?raw=true)
+![image](checkpoint1a.png?raw=true)
 
-[checkpoint1](checkpoint1.html)
+[checkpoint1](checkpoint1a.html)
+
+![image](checkpoint1b.png?raw=true)
+
+[checkpoint1](checkpoint1b.html)
+
+![image](checkpoint1c.png?raw=true)
+
+[checkpoint1](checkpoint1c.html)
 
 ## 2 (5 points)
 
-![image](image.png?raw=true)
+![image](checkpoint2.png?raw=true)
 
 [checkpoint2](checkpoint2.html)
 
 ## 3 (5 points)
 
-![image](image.png?raw=true)
+![image](checkpoint3.png?raw=true)
 
 [checkpoint3](checkpoint3.html)
 
 ## 4 (5 points)
 
-![image](image.png?raw=true)
+![image](checkpoint4.png?raw=true)
 
 [checkpoint4](checkpoint4.html)
 
@@ -58,27 +66,27 @@ fill-in-your-answer
 
 ### 1.a. (5 points)
 
-![image](image.png?raw=true)
+![image](challenge1a.png?raw=true)
 
-[challenge1-a](challenge1-a.html)
+[challenge1-a](challenge1a.html)
 
 ### 1.b. (5 points)
 
-![image](image.png?raw=true)
+![image](challenge1b.png?raw=true)
 
-[challenge1-b](checkpoint1-b.html)
+[challenge1-b](challenge1b.html)
 
 ### 1.c. (5 points)
 
-![image](image.png?raw=true)
+![image](challenge1c.png?raw=true)
 
-[challenge1-c](checkpoint1-c.html)
+[challenge1-c](challenge1c.html)
 
 ### 1.d. (5 points)
 
-![image](image.png?raw=true)
+![image](challenge1d.png?raw=true)
 
-[challenge1-d](checkpoint1-d.html)
+[challenge1-d](challenge1d.html)
 
 ## Challenge 2 (5 points x 6 = 30 points)
 
@@ -114,7 +122,7 @@ fill-in-your-answer
 
 ![image](image.png?raw=true)
 
-[challenge3-a](checkpoint3-a.html)
+[challenge3-a](challenge3.html)
 
 ### 3.b. (8 points)
 
