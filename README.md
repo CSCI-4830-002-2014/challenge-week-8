@@ -2,17 +2,15 @@
 Dawson Botsford
 
 # How many points have you earned?
-100/100
+92/100
 
 (Make your own calculation and replace the number 0 with the points you think you've earned.)
 
 # How many hours have you spent on this?
-
-fill-in-your-answer
+11
 
 # What is the most difficult part about this week's challenge?
-
-fill-in-your-answer
+Way too long. I wish we could perform analytics on our own repo's too. Shorten these and I will have longer to spend on each and actually learn more.
 
 # Show and tell (6 points)
 
