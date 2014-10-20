@@ -1,6 +1,6 @@
 # Name
 
-write-your-name
+Ian Ker-Seymer
 
 # How many points have you earned?
 
@@ -30,25 +30,29 @@ fill-in-your-answer
 
 ## 1 (5 points)
 
-![image](image.png?raw=true)
+![image](https://www.dropbox.com/s/xps4vbyw2gxsvw2/Screenshot%202014-10-19%2020.07.51.png?dl=1)
+![image](https://www.dropbox.com/s/xps4vbyw2gxsvw2/Screenshot%202014-10-19%2020.07.51.png?dl=1)
+![image](https://www.dropbox.com/s/xps4vbyw2gxsvw2/Screenshot%202014-10-19%2020.07.51.png?dl=1)
 
-[checkpoint1](checkpoint1.html)
+[checkpoint1-a](checkpoint1-a.html)
+[checkpoint1-b](checkpoint1-b.html)
+[checkpoint1-c](checkpoint1-c.html)
 
 ## 2 (5 points)
 
-![image](image.png?raw=true)
+![image](https://www.dropbox.com/s/gfahoyir09wen56/Screenshot%202014-10-19%2020.50.56.png?dl=1)
 
 [checkpoint2](checkpoint2.html)
 
 ## 3 (5 points)
 
-![image](image.png?raw=true)
+![image](https://www.dropbox.com/s/v6g8o8exobjdxkg/Screenshot%202014-10-19%2021.00.22.png?dl=1)
 
 [checkpoint3](checkpoint3.html)
 
 ## 4 (5 points)
 
-![image](image.png?raw=true)
+![image](https://www.dropbox.com/s/85puqtms1zxwoec/Screenshot%202014-10-19%2021.15.28.png?dl=1)
 
 [checkpoint4](checkpoint4.html)
 
