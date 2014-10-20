@@ -23,25 +23,6 @@ var svg = d3.select("body")
 .attr("width", w)
 .attr("height", h);
 
-// Make lines
-svg
-.append("line")               
-.attr("x1", 15)
-.attr("y1", 15)
-.attr("x2", 15)
-.attr("y2", h-15)
-.attr("stroke-width", 2)
-.attr("stroke", "black");
-
-svg
-.append("line")               
-.attr("x1", 15)
-.attr("y1", h-15)
-.attr("x2", w-15)
-.attr("y2", h-15)
-.attr("stroke-width", 2)
-.attr("stroke", "black");
-
 
 d3.json("https://api.github.com/orgs/csci-4830-002-2014/repos",
   function(error, data) {
@@ -49,50 +30,46 @@ d3.json("https://api.github.com/orgs/csci-4830-002-2014/repos",
 
   //Create scale functions
   var xScale = d3.scale.linear()
-  .domain([0, d3.max(dataset, function(d) { return d[0]; })])
+  .domain([0, d3.max(dataset, function(d) { return  d.forks_count; })])
   .range([padding, w - padding * 2]);
 
   var yScale = d3.scale.linear()
-  .domain([0, d3.max(dataset, function(d) { return d.forks; })])
+  .domain([0, d3.max(dataset, function(d) { return d.open_issues_count; })])
   .range([h - padding, padding]);
 
-  var rScale = d3.scale.linear()
-  .domain([0, d3.max(dataset, function(d) { return d.open_issues_count; })])
-  .range([2, 8]);
+  symbol = svg.selectAll("g")
+              .data(dataset)
+              .enter()
+              .append("g")
+              .attr("transform", function(d, i) {
+                return "translate(" + xScale(d.forks_count) + "," + yScale(d.open_issues_count) +")";
+              });
 
-// Make circles
+            symbol.append("circle")
+                .attr("r", function(d){
+                  return 16;
+                })
+                .attr("cx", function(d){
+                  return 8;
+                })
+                .attr("cy", function(d){
+                  return 8;
+                })
+              .attr("fill", "blue");
+            symbol.append("text")
+                .attr("dx", function(d){return 0})
+                .attr("dy", function(d){return 15})
+                .text(function(d){return d.name.charAt(0)})
+                .style("font-size","34px")
 
-svg.selectAll("circle")
-.data(dataset)
-.enter()
-.append("circle")
-.attr("cx", function(d, i) {
-  return 15 + i*20;
-})
-.attr("cy", function(d) {
-  return yScale(d.forks);
-})
-.attr("r", function(d) {
-  return rScale(d.open_issues_count);
-});
-
-svg.selectAll("text")
-.data(dataset)
-.enter()
-.append("text")
-.text(function(d) {
-  return d.name;
-})
-.attr("x", function(d, i) {
-  return 15 + i*20;
-})
-.attr("y", function(d) {
-  return yScale(d.forks);
-})
-.attr("font-family", "sans-serif")
-.attr("font-size", "11px")
-.attr("fill", "red");
-});
+            symbol.append("line")
+                .attr("x1", function(d) { return -xScale(d.forks_count)})
+                .attr("y1", function(d) { return -yScale(d.open_issues_count)})
+                .attr("x2", function(d) { return 8})
+                .attr("y2", function(d) { return 8})
+                .attr("stroke-width", 2)
+                .attr("stroke", "black");
+            })
 
         </script>
     </body>

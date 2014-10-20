@@ -10,11 +10,11 @@ Justin McBride
 
 # How many hours have you spent on this?
 
-fill-in-your-answer
+2.5 hours
 
 # What is the most difficult part about this week's challenge?
 
-fill-in-your-answer
+The visualizations make no sense. The point is for a visualization to be able to represent otherwise arbitrary numbers in a way that would make them more easy to digest.Having us create these 'graphs' that don't actually present data in an intuitive, easy-to-understand way makes it extremely difficult to find any motivation to do the work.
 
 # Show and tell (6 points)
 
@@ -99,21 +99,21 @@ fill-in-your-answer
 
 ### 2.c. (5 points)
 
-![image](image.png?raw=true)
+![image](images/ch2c.png?raw=true)
 
 ### 2.d. (5 points)
 
-![image](image.png?raw=true)
+![image](images/ch2d.png?raw=true)
 
 ### 2.e. (5 points)
 
-![image](image.png?raw=true)
+![image](images/ch2e.png?raw=true)
 
 ### 2.f. (5 points)
 
-![image](image.png?raw=true)
+![image](images/ch2f.png?raw=true)
 
-[challenge2](checkpoint2.html)
+[challenge2](ch2f.html)
 
 ## Challenge 3 (8 points x 3 = 24 points)
 
