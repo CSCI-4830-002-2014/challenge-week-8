@@ -1,6 +1,6 @@
 # Name
 
-write-your-name
+Jake Charland
 
 # How many points have you earned?
 
@@ -30,27 +30,35 @@ fill-in-your-answer
 
 ## 1 (5 points)
 
-![image](image.png?raw=true)
+![image](1a.png?raw=true)
 
-[checkpoint1](checkpoint1.html)
+[checkpoint1](1a.html)
+
+![image](1b.png?raw=true)
+
+[checkpoint1](1b.html)
+
+![image](1c.png?raw=true)
+
+[checkpoint1](1c.html)
 
 ## 2 (5 points)
 
-![image](image.png?raw=true)
+![image](cp2.png?raw=true)
 
-[checkpoint2](checkpoint2.html)
+[checkpoint2](cp2.html)
 
 ## 3 (5 points)
 
-![image](image.png?raw=true)
+![image](cp3.png?raw=true)
 
-[checkpoint3](checkpoint3.html)
+[checkpoint3](cp3.html)
 
 ## 4 (5 points)
 
-![image](image.png?raw=true)
+![image](cp4.png?raw=true)
 
-[checkpoint4](checkpoint4.html)
+[checkpoint4](cp4.html)
 
 # Challenges
 
