@@ -1,6 +1,6 @@
 # Name
 
-write-your-name
+Irfan Nadiadi
 
 # How many points have you earned?
 
@@ -30,27 +30,35 @@ fill-in-your-answer
 
 ## 1 (5 points)
 
-![image](image.png?raw=true)
+![image](checkpoints/1a.png)
 
-[checkpoint1](checkpoint1.html)
+[checkpoint1 (2a)](check1a.html)
+
+![image](checkpoints/1c.png)
+
+[checkpoint1 (2c)](check1c.html)
+
+![image](checkpoints/1e.png)
+
+[checkpoint1 (2e)](check1e.html)
 
 ## 2 (5 points)
 
-![image](image.png?raw=true)
+![image](checkpoints/2.png)
 
-[checkpoint2](checkpoint2.html)
+[checkpoint2](check2.html)
 
 ## 3 (5 points)
 
-![image](image.png?raw=true)
+![image](checkpoints/3.png)
 
-[checkpoint3](checkpoint3.html)
+[checkpoint3](check3.html)
 
 ## 4 (5 points)
 
-![image](image.png?raw=true)
+![image](checkpoints/4.png)
 
-[checkpoint4](checkpoint4.html)
+[checkpoint4](check4.html)
 
 # Challenges
 
@@ -58,15 +66,15 @@ fill-in-your-answer
 
 ### 1.a. (5 points)
 
-![image](image.png?raw=true)
+![image](challenges/1a.png)
 
-[challenge1-a](challenge1-a.html)
+[challenge1-a](1a.html)
 
 ### 1.b. (5 points)
 
-![image](image.png?raw=true)
+![image](challenges/1b.html)
 
-[challenge1-b](checkpoint1-b.html)
+[challenge1-b](1b.html)
 
 ### 1.c. (5 points)
 
