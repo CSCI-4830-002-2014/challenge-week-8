@@ -92,7 +92,7 @@ fill-in-your-answer
 
 ### 2.a. (5 points)
 
-![image](challenges2a.png?raw=true)
+![image](challenge2a.png?raw=true)
 
 ### 2.b. (5 points)
 
