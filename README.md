@@ -4,17 +4,15 @@ Alexia Newgord
 
 # How many points have you earned?
 
-0/100
+31/100
 
 (Make your own calculation and replace the number 0 with the points you think you've earned.)
 
-# How many hours have you spent on this?
-
-fill-in-your-answer
+# 6.5
 
 # What is the most difficult part about this week's challenge?
 
-fill-in-your-answer
+Scatter Plot
 
 # Show and tell (6 points)
 
