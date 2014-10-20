@@ -1,6 +1,6 @@
 # Name
 
-write-your-name
+Jake White
 
 # How many points have you earned?
 
@@ -20,23 +20,24 @@ fill-in-your-answer
 
 ## Link (2 points)
 
-[title-of-the-article](http://link-to-an-example-of-big-data-visualization-in-a-public-space)
+[The week in big data on Twitter, visualized](https://gigaom.com/2013/07/19/the-week-in-big-data-on-twitter-visualized/)
 
 ## Describe briefly the "motivation" and "intended audience" of this public visualization (4 points).
 
-fill-in-your-answer
+This article is written by Gigaom, a blog providing technological current events; which has an audienced encompassed of readers whom are interested in the use of big data as well as technological capabilities.
+The motivation of this article is to show their readers a unique view on how big data is being talked about on twitter
 
 # Checkpoints (5 points x 4 = 20 points)
 
 ## 1 (5 points)
 
-![image](image.png?raw=true)
+![image](http://jsfiddle.net/t2pt7qz8/)
 
 [checkpoint1](checkpoint1.html)
 
 ## 2 (5 points)
 
-![image](image.png?raw=true)
+![image](http://jsfiddle.net/t2pt7qz8/1/)
 
 [checkpoint2](checkpoint2.html)
 
