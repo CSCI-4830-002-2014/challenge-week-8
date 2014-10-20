@@ -84,15 +84,12 @@
               .attr("fill", "red");    
 
 
-            symbol.append("rect")
-              .attr("width", function(d,i){
-                  return d.size/2; // TODO
-              })
-              .attr("height", function(d,i){
-                  return d.size/2; // TODO
-              })                
-              .attr("x", function(d){
 
+          symbol.append("circle") 
+          .attr("r", function(d){
+            return d.size/4;
+          })            
+          .attr("cx", function(d){
                 if (d.quadrant == 4){
                     return d.distance/2.75
                 }
@@ -101,8 +98,9 @@
                 }else{
                     return 0; // TODO
                 }
-              })
-              .attr("y", function(d){
+
+          })
+         .attr("cy", function(d){
                 if (d.quadrant == 4){
                     return d.distance/ 2.75; // TODO
                 }
@@ -112,7 +110,11 @@
                     return 0; // TODO
                 }
               })                
-          .attr("fill", "blue");       
+        .attr("fill", "blue");  
+
+
+
+
         </script>
     </body>
 </html>

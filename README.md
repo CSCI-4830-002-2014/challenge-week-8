@@ -4,7 +4,7 @@ Alexander Tsankov
 
 # How many points have you earned?
 
-0/100
+38/100
 
 (Make your own calculation and replace the number 0 with the points you think you've earned.)
 
@@ -66,7 +66,7 @@ She 3d printed teeth girlls based on infromation from lyrics from different hip 
 
 ### 1.a. (5 points)
 
-![image](image.png?raw=true)
+![image](challenge-1.png)
 
 [challenge1-a](challenge1-a.html)
 
