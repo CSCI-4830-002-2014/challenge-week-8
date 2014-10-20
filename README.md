@@ -132,7 +132,7 @@ What gives?
 
 ### 3.b. (8 points)
 
-![image](image.png?raw=true)
+![image](https://www.dropbox.com/s/cb99egdsxtozr1g/Screenshot%202014-10-20%2001.22.48.png?dl=1)
 
 [challenge3-b](checkpoint3-b.html)
 
