@@ -35,24 +35,24 @@ fill-in-your-answer
 ![image](https://dl.dropboxusercontent.com/u/44502811/Big%20Data%20ScreenShots/Week%208/checkpoint1-c.png)
 
 [checkpoint1](checkpoint1-a.html)
-[checkpoint1](checkpoint1-b.html)
-[checkpoint1](checkpoint1-c.html)
+[checkpoint2](checkpoint1-b.html)
+[checkpoint3](checkpoint1-c.html)
 
 ## 2 (5 points)
 
-![image](image.png?raw=true)
+![image](https://dl.dropboxusercontent.com/u/44502811/Big%20Data%20ScreenShots/Week%208/checkpoint2.png)
 
 [checkpoint2](checkpoint2.html)
 
 ## 3 (5 points)
 
-![image](image.png?raw=true)
+![image](https://dl.dropboxusercontent.com/u/44502811/Big%20Data%20ScreenShots/Week%208/checkpoint3.png)
 
 [checkpoint3](checkpoint3.html)
 
 ## 4 (5 points)
 
-![image](image.png?raw=true)
+![image](https://dl.dropboxusercontent.com/u/44502811/Big%20Data%20ScreenShots/Week%208/checkpoint4.png)
 
 [checkpoint4](checkpoint4.html)
 
