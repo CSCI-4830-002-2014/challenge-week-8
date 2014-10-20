@@ -70,45 +70,45 @@ fill-in-your-answer
 
 ![image](https://dl.dropboxusercontent.com/u/44502811/Big%20Data%20ScreenShots/Week%208/challenge1-b.png)
 
-[challenge1-b](checkpoint1-b.html)
+[challenge1-b](challenge1-b.html)
 
 ### 1.c. (5 points)
 
 ![image](https://dl.dropboxusercontent.com/u/44502811/Big%20Data%20ScreenShots/Week%208/challenge1-c.png)
 
-[challenge1-c](checkpoint1-c.html)
+[challenge1-c](challenge1-c.html)
 
 ### 1.d. (5 points)
 
 ![image](https://dl.dropboxusercontent.com/u/44502811/Big%20Data%20ScreenShots/Week%208/challenge1-d.png)
 
-[challenge1-d](checkpoint1-d.html)
+[challenge1-d](challenge1-d.html)
 
 ## Challenge 2 (5 points x 6 = 30 points)
 
 ### 2.a. (5 points)
 
-![image](image.png?raw=true)
+![image](https://dl.dropboxusercontent.com/u/44502811/Big%20Data%20ScreenShots/Week%208/challenge2-a.png)
 
 ### 2.b. (5 points)
 
-![image](image.png?raw=true)
+![image](https://dl.dropboxusercontent.com/u/44502811/Big%20Data%20ScreenShots/Week%208/challenge2-b.png)
 
 ### 2.c. (5 points)
 
-![image](image.png?raw=true)
+![image](https://dl.dropboxusercontent.com/u/44502811/Big%20Data%20ScreenShots/Week%208/challenge2-c.png)
 
 ### 2.d. (5 points)
 
-![image](image.png?raw=true)
+![image](https://dl.dropboxusercontent.com/u/44502811/Big%20Data%20ScreenShots/Week%208/challenge2-d.png)
 
 ### 2.e. (5 points)
 
-![image](image.png?raw=true)
+![image](https://dl.dropboxusercontent.com/u/44502811/Big%20Data%20ScreenShots/Week%208/challenge2-e.png)
 
 ### 2.f. (5 points)
 
-![image](image.png?raw=true)
+![image](https://dl.dropboxusercontent.com/u/44502811/Big%20Data%20ScreenShots/Week%208/challenge2-f.png)
 
 [challenge2](checkpoint2.html)
 
