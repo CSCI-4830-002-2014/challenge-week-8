@@ -111,24 +111,24 @@ Buildings are being outfitted in dashboards with a display about the "green-ness
 
 ![image](http://i.imgur.com/ZSOG06g.png)
 
-[challenge2](checkpoint2.html)
+[challenge2](challenge2.html)
 
 ## Challenge 3 (8 points x 3 = 24 points)
 
 ### 3.a. (8 points)
 
-![image](image.png?raw=true)
+![image](http://i.imgur.com/cGNBz9f.png)
 
-[challenge3-a](checkpoint3-a.html)
+[challenge3-a](challenge3-a.html)
 
 ### 3.b. (8 points)
 
-![image](image.png?raw=true)
+![image](http://i.imgur.com/am3KKPN.png)
 
-[challenge3-b](checkpoint3-b.html)
+[challenge3-b](challenge3-b.html)
 
 ### 3.c. (8 points)
 
 ![image](image.png?raw=true)
 
-[challenge3-c](checkpoint3-c.html)
+[challenge3-c](challenge3-c.html)
