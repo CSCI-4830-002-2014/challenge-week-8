@@ -1,6 +1,6 @@
 # Name
 
-write-your-name
+Sam Korn
 
 # How many points have you earned?
 
@@ -14,43 +14,43 @@ fill-in-your-answer
 
 # What is the most difficult part about this week's challenge?
 
-fill-in-your-answer
+In the D3.tsv function, in the example code it provides the parameters (url,type,callback), in jsFiddle it allows the type field to be filled in but not do anything. But in normal HTML this is not the case. Fixing this bug took ~2 hours.
 
 # Show and tell (6 points)
 
 ## Link (2 points)
 
-[title-of-the-article](http://link-to-an-example-of-big-data-visualization-in-a-public-space)
+[HeadsUP! Times Square Visualization Challenge](http://www.visualizing.org/contests/groundwater)
 
 ## Describe briefly the "motivation" and "intended audience" of this public visualization (4 points).
 
-fill-in-your-answer
+This visualization was from a contest in order to show a general audience an example of the data about aquifer levels. Currently most of the data about water usage and aquifer levels are meant for experienced hydrologists, and are therefore very difficult to be read be the general population. This visualization is meant to try to convince people to use less water and realize where the water is coming from.
 
 # Checkpoints (5 points x 4 = 20 points)
 
 ## 1 (5 points)
 
-![image](image.png?raw=true)
+![image](D3Checkpoint1.png)
 
-[checkpoint1](checkpoint1.html)
+[checkpoint1](D3Checkpoint1.html)
 
 ## 2 (5 points)
 
-![image](image.png?raw=true)
+![image](D3Checkpoint2.png)
 
-[checkpoint2](checkpoint2.html)
+[checkpoint2](D3Checkpoint2.html)
 
 ## 3 (5 points)
 
-![image](image.png?raw=true)
+![image](D3Checkpoint3.png)
 
-[checkpoint3](checkpoint3.html)
+[checkpoint3](D3Checkpoint3.html)
 
 ## 4 (5 points)
 
-![image](image.png?raw=true)
+![image](D3Checkpoint4.png)
 
-[checkpoint4](checkpoint4.html)
+[checkpoint4](D3Checkpoint4.html)
 
 # Challenges
 
@@ -58,25 +58,25 @@ fill-in-your-answer
 
 ### 1.a. (5 points)
 
-![image](image.png?raw=true)
+![image](D3Challenge1a.png)
 
 [challenge1-a](challenge1-a.html)
 
 ### 1.b. (5 points)
 
-![image](image.png?raw=true)
+![image](D3Challenge1b.png)
 
 [challenge1-b](checkpoint1-b.html)
 
 ### 1.c. (5 points)
 
-![image](image.png?raw=true)
+![image](D3Challenge1c.png)
 
 [challenge1-c](checkpoint1-c.html)
 
 ### 1.d. (5 points)
 
-![image](image.png?raw=true)
+![image](D3Challenge1d.png)
 
 [challenge1-d](checkpoint1-d.html)
 
@@ -84,29 +84,29 @@ fill-in-your-answer
 
 ### 2.a. (5 points)
 
-![image](image.png?raw=true)
+![image](D3Challenge2a.png)
 
 ### 2.b. (5 points)
 
-![image](image.png?raw=true)
+![image](D3Challenge2b.png)
 
 ### 2.c. (5 points)
 
-![image](image.png?raw=true)
+![image](D3Challenge2c.png)
 
 ### 2.d. (5 points)
 
-![image](image.png?raw=true)
+![image](D3Challenge2d.png)
 
 ### 2.e. (5 points)
 
-![image](image.png?raw=true)
+![image](D3Challenge2e.png
 
 ### 2.f. (5 points)
 
-![image](image.png?raw=true)
+![image](D3Challenge2f.png)
 
-[challenge2](checkpoint2.html)
+[challenge2](challenge2.html)
 
 ## Challenge 3 (8 points x 3 = 24 points)
 

@@ -1,0 +1,40 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+   		<script type="text/javascript" src="http://d3js.org/d3.v3.min.js"></script>
+		<style type="text/css">
+			/* No style rules here yet */		
+		</style>
+    </head>
+    <body>
+    <h1> Sam Korn Checkpoint 4! </h1>
+    	<script type="text/javascript">
+    	    var w = 600;
+            var h = 600;                    
+           
+            var data = [43, 23, 13, 54, 23, 9, 52, 20]
+            
+            var svg = d3.select("body")          
+                        .append("svg")
+                        .attr("width", w)
+                        .attr("height", h);
+ 
+            svg.selectAll("line")
+              .data(data)
+              .enter()
+              .append("line")               
+              .attr("x1", function (d,i) {
+              		return 5 + 50*i;
+              })
+              .attr("y1", 5)
+              .attr("x2", function (d,i){
+                  return 5 + 50*i;
+              })
+              .attr("y2", function (d,i){
+                  return d + 5;
+              })
+              .attr("stroke-width", 2)
+              .attr("stroke", "black");
+    	</script>
+    </body>
+</html>
