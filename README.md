@@ -14,7 +14,7 @@ Irfan Nadiadi
 
 # What is the most difficult part about this week's challenge?
 
-Working with d3 is not too hard, but it really takes quite a lot of time. I have quite a lot of other work to do and was unable to finish this.
+Working with d3 is not too hard, but it really takes a lot of time. I have quite a lot of other work to do and was unable to finish this.
 
 # Show and tell (6 points)
 
