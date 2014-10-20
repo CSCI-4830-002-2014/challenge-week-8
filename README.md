@@ -4,17 +4,17 @@ Alexander Tsankov
 
 # How many points have you earned?
 
-38/100
+41/100
 
 (Make your own calculation and replace the number 0 with the points you think you've earned.)
 
 # How many hours have you spent on this?
 
-fill-in-your-answer
+5
 
 # What is the most difficult part about this week's challenge?
 
-fill-in-your-answer
+D3 stuff is way to hard without proper training. 
 
 # Show and tell (6 points)
 
@@ -24,7 +24,7 @@ fill-in-your-answer
 
 ## Describe briefly the "motivation" and "intended audience" of this public visualization (4 points).
 
-She 3d printed teeth girlls based on infromation from lyrics from different hip hop musicians.
+She 3d printed teeth grills based on infromation from lyrics from different hip hop musicians.
 
 # Checkpoints (5 points x 4 = 20 points)
 
@@ -100,11 +100,11 @@ She 3d printed teeth girlls based on infromation from lyrics from different hip 
 
 ### 2.c. (5 points)
 
-![image](image.png?raw=true)
+![image](ch-2c.png)
 
 ### 2.d. (5 points)
 
-![image](image.png?raw=true)
+![image](ch-2d.png)
 
 ### 2.e. (5 points)
 
