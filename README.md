@@ -97,19 +97,19 @@ Buildings are being outfitted in dashboards with a display about the "green-ness
 
 ### 2.c. (5 points)
 
-![image](image.png?raw=true)
+![image](http://i.imgur.com/XsC5lEP.png)
 
 ### 2.d. (5 points)
 
-![image](image.png?raw=true)
+![image](http://i.imgur.com/6IfjzHF.png)
 
 ### 2.e. (5 points)
 
-![image](image.png?raw=true)
+![image](http://i.imgur.com/8ciTcS7.png)
 
 ### 2.f. (5 points)
 
-![image](image.png?raw=true)
+![image](http://i.imgur.com/ZSOG06g.png)
 
 [challenge2](checkpoint2.html)
 
