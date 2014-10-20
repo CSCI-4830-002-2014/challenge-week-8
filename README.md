@@ -97,7 +97,7 @@ What gives?
 
 ### 2.b. (5 points)
 
-![image](image.png?raw=true)
+![image](https://www.dropbox.com/s/zwpc7lo1vpf9oc3/Screenshot%202014-10-19%2023.58.39.png?dl=1)
 
 ### 2.c. (5 points)
 
