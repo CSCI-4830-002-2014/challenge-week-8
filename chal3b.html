@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>D3</title>
+        <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/d3/3.4.12/d3.min.js"></script>
+        <style type="text/css">  
+        </style>
+    </head>
+    <body>
+        <script type="text/javascript">
+            var w = 1000;
+            var h = 400;  
+            var padding = 20;                  
+           
+            d3.json("https://api.github.com/orgs/csci-4830-002-2014/repos",
+              function(error, data) {
+                  dataset = data;
+
+                  var circleScale = d3.scale.linear()
+                    .domain([0, d3.max(dataset, function(d) { return d.size; })])
+                    .range([5, 15]);
+
+                  var heightScale = d3.scale.linear()
+                    .domain([0, d3.max(dataset, function(d) { return d.forks_count; })])
+                    .range([0, 100]);
+
+            
+            
+                var svg = d3.select("body")          
+                  .append("svg")
+                  .attr("width", w)
+                  .attr("height", h);
+
+
+                   svg.selectAll("rect")
+                    .data(dataset)
+                    .enter()
+                    .append("rect")
+                    .attr("x", function(d,i) {
+                      return 15+(40*i);
+                    })
+                    .attr("y", function(d) {
+                      return 20
+                    })
+  
+                  .attr("fill", function(d) {
+                    if (d.watchers_count > 0) {
+                      return "black"
+                    }
+                    else {
+                      return "lightgreen"
+                    }
+                  })
+                  .attr("width", 10)
+
+                  .attr("height", function(d) {
+                    return 10+heightScale(d.forks_count)
+                  });
+
+
+                  svg.selectAll("circle")
+                    .data(dataset)
+                    .enter()
+                    .append("circle")
+                    .attr("cx", function(d,i) {
+                      return 20+(40*i)
+                    })
+                    .attr("cy", 20)
+                    .attr("r", function(d) {
+                      return circleScale(d.size)
+                    })
+                    .attr("fill", "steelblue");
+
+                  
+               
+                });
+ 
+           
+ 
+              
+        </script>
+    </body>
+</html>

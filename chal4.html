@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>D3</title>
+        <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/d3/3.4.12/d3.min.js"></script>
+        <script src="http://labratrevenge.com/d3-tip/javascripts/d3.tip.v0.6.3.js"></script>
+        <style type="text/css">  
+                      .d3-tip {
+            line-height: 1;
+            font-weight: bold;
+            padding: 12px;
+            background: rgba(0, 0, 0, 0.8);
+            color: #fff;
+            border-radius: 2px;
+          }
+
+                  .d3-tip:after {
+          box-sizing: border-box;
+          display: inline;
+          font-size: 10px;
+          width: 100%;
+          line-height: 1;
+          color: rgba(0, 0, 0, 0.8);
+          content: "\25BC";
+          position: absolute;
+          text-align: center;
+        }
+        </style>
+    </head>
+    <body>
+        <script type="text/javascript">
+            var w = 800;
+            var h = 600;  
+            var padding = 100;      
+            var tip = d3.tip()
+            .attr('class', 'd3-tip')
+            .offset([-10, 0])
+            .html(function(d) {
+              return "<strong>Watchers:</strong> <span style='color:red'>" + d.watchers+ "</span>"+"<br><strong>Open Issues:</strong> <span style='color:red'>" +d.open_issues_count+ "</span>"+"<br><strong>ID:</strong> <span style='color:red'>" +d.id+ "</span>";
+            })            
+           
+            d3.json("https://api.github.com/orgs/csci-4830-002-2014/repos",
+              function(error, data) {
+                  dataset = data;
+
+                  var xScale = d3.scale.linear()
+                    .domain([0, d3.max(dataset, function(d) { return d.size; })])
+                    .range([padding, w - padding * 2]);
+
+                  var yScale = d3.scale.linear()
+                    .domain([0, d3.max(dataset, function(d) { return d.forks_count; })])
+                    .range([h - padding, padding]);
+
+                  var rScale = d3.scale.linear()
+                    .domain([0, d3.max(dataset, function(d) { return d.open_issues_count; })])
+                    .range([2, 15]);
+            
+                var svg = d3.select("body")          
+                  .append("svg")
+                  .attr("width", w)
+                  .attr("height", h);
+
+                  svg.call(tip);
+
+                  svg.selectAll("circle")
+                    .data(dataset)
+                    .enter()
+                    .append("circle")
+                    .attr("cx", function(d) {
+                      return xScale(d.size);
+                    })
+                    .attr("cy", function(d) {
+                      return yScale(d.forks_count);
+                    })
+                    .attr("r", function(d) {
+                      return rScale(d.open_issues_count);
+                    })
+                    .on('mouseover', tip.show)
+                    .on('mouseout', tip.hide);
+
+                  svg.selectAll("text")
+                    .data(dataset)
+                    .enter()
+                    .append("text")
+                    .text(function(d) {
+                      return d.name;
+                    })
+                    .attr("x", function(d) {
+                      return xScale(d.size);
+                    })
+                    .attr("y", function(d) {
+                      return yScale(d.forks_count);
+                    })
+                    .attr("font-family", "sans-serif")
+                    .attr("font-size", "11px")
+                    .attr("fill", "red");
+ 
+           
+ 
+              });
+        </script>
+    </body>
+</html>
