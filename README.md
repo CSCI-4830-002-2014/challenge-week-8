@@ -4,7 +4,7 @@ Chris Wittenberg
 
 # How many points have you earned?
 
-25/100
+60/100
 
 (Make your own calculation and replace the number 0 with the points you think you've earned.)
 
@@ -44,19 +44,19 @@ The motivation Bryan Connor had for creating this data visualization is to give 
 
 ## 2 (5 points)
 
-![image](image.png?raw=true)
+![image](checkpoint2.png?raw=true)
 
 [checkpoint2](checkpoint2.html)
 
 ## 3 (5 points)
 
-![image](image.png?raw=true)
+![image](checkpoint3.png?raw=true)
 
 [checkpoint3](checkpoint3.html)
 
 ## 4 (5 points)
 
-![image](image.png?raw=true)
+![image](checkpoint4.png?raw=true)
 
 [checkpoint4](checkpoint4.html)
 
@@ -66,27 +66,27 @@ The motivation Bryan Connor had for creating this data visualization is to give 
 
 ### 1.a. (5 points)
 
-![image](image.png?raw=true)
+![image](challenge1a.png?raw=true)
 
-[challenge1-a](challenge1-a.html)
+[challenge1-a](challenge1a.html)
 
 ### 1.b. (5 points)
 
-![image](image.png?raw=true)
+![image](challenge1b.png?raw=true)
 
-[challenge1-b](checkpoint1-b.html)
+[challenge1-b](challenge1b.html)
 
 ### 1.c. (5 points)
 
-![image](image.png?raw=true)
+![image](challenge1c.png?raw=true)
 
-[challenge1-c](checkpoint1-c.html)
+[challenge1-c](challenge1c.html)
 
 ### 1.d. (5 points)
 
-![image](image.png?raw=true)
+![image](challenge1d.png?raw=true)
 
-[challenge1-d](checkpoint1-d.html)
+[challenge1-d](challenge1d.html)
 
 ## Challenge 2 (5 points x 6 = 30 points)
 
@@ -122,7 +122,7 @@ The motivation Bryan Connor had for creating this data visualization is to give 
 
 ![image](image.png?raw=true)
 
-[challenge3-a](checkpoint3-a.html)
+[challenge3-a](challenge3.html)
 
 ### 3.b. (8 points)
 
