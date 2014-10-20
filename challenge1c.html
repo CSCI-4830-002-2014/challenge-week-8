@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+    <h1>Logan Bates</h1>
+    <head>
+        <meta charset="utf-8">
+        <title>Challenge 1c</title>
+        <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/d3/3.4.12/d3.min.js"></script>
+        <style type="text/css">
+        </style>
+    </head>
+    <body>
+        <script type="text/javascript">
+            var width = 500;
+            var height = 500;
+            var padding = 20;
+
+        d3.json("https://api.github.com/orgs/csci-4830-002-2014/repos", 
+          function(error, dataset) {
+            data = dataset;
+           
+
+			var xScale = d3.scale.linear()
+								 .domain([0, d3.max(data, function(d) { return d.size; })])
+								 .range([padding, width - 100]);
+
+			var yScale = d3.scale.linear()
+								 .domain([0, d3.max(data, function(d) { return d.forks_count; })])
+								 .range([10, height-10]);
+
+			var rScale = d3.scale.linear()
+								 .domain([0, d3.max(data, function(d) { return d.open_issues_count; })])
+								 .range([padding, height - 10]);
+	
+			var svg = d3.select("body")
+						.append("svg")
+						.attr("width", width)
+						.attr("height", height);
+
+			svg.selectAll("circle")
+			   .data(dataset)
+			   .enter()
+			   .append("circle")
+			   .attr("cx", function(d) {
+			   		return xScale(d.size);
+			   })
+			   .attr("cy", function(d) {
+			   		return yScale(d.forks_count);
+			   })
+			   .attr("r", function(d) {
+			   		return d.open_issues_count;
+			   });
+
+			svg.selectAll("text")
+			   .data(dataset)
+			   .enter()
+			   .append("text")
+			   .text(function(d) {
+			   		return d.name;
+			   })
+			   .attr("x", function(d) {
+			   		return xScale(d.size);
+			   })
+			   .attr("y", function(d) {
+			   		return yScale(d.forks_count);
+			   })
+			   .attr("font-family", "sans-serif")
+			   .attr("font-size", "11px")
+			   .attr("fill", "red");
+
+        });
+        </script>
+    </body>
+</html>
