@@ -4,11 +4,12 @@
     <meta charset="utf-8">
     <title>D3: scatterplot</title>
     <script type="text/javascript" src="http://d3js.org/d3.v3.min.js"></script>
+    <script src="http://labratrevenge.com/d3-tip/javascripts/d3.tip.v0.6.3.js"></script>
     <style type="text/css">   
     </style>
   </head>
   <body> 
-    xAxis:size, yAxis:forks_count
+    xAxis:size, yAxis:forks_count, size:open_issues_count, toolTip:created_at
     <script type="text/javascript">
 
       //Width and height
@@ -19,6 +20,13 @@
         function(error, data) {
         dataset = data;
         var padding = 20;
+
+        var tip = d3.tip()
+          .attr('class', 'd3-tip')
+          .offset([-10, 0])
+          .html(function(d) {
+            return "<strong>Created: </strong> <span style='color:red'>" + d.created_at + "</span>";
+          })
 
         //Create SVG element
         var svg = d3.select("body")
@@ -36,9 +44,10 @@
                    .range([h - padding, padding]);
 
         var rScale = d3.scale.linear()
-                       .domain([0, d3.max(dataset, function(d) { return 90; })])
-                       .range([2, 5]);
+                       .domain([0, d3.max(dataset, function(d) { return d.open_issues_count; })])
+                       .range([2, 10]);
 
+        svg.call(tip);
 
         svg.selectAll("circle")
            .data(dataset)
@@ -51,8 +60,10 @@
               return yScale(d.forks_count);
            })
           .attr("r", function(d) {
-              return rScale(90);
-          });
+              return rScale(d.open_issues_count);
+           })
+           .on('mouseover', tip.show)
+           .on('mouseout', tip.hide);
 
         svg.selectAll("text")
            .data(dataset)

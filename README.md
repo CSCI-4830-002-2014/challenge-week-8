@@ -4,11 +4,11 @@ Alexia Newgord
 
 # How many points have you earned?
 
-31/100
+46/100
 
 (Make your own calculation and replace the number 0 with the points you think you've earned.)
 
-# 6.5
+# 8
 
 # What is the most difficult part about this week's challenge?
 
