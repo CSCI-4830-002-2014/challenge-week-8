@@ -126,18 +126,18 @@ What gives?
 
 ### 3.a. (8 points)
 
-![image](image.png?raw=true)
+![image](https://www.dropbox.com/s/pandvri86eamqfq/Screenshot%202014-10-20%2021.25.47.png?dl=1)
 
-[challenge3-a](checkpoint3-a.html)
+[challenge3-a](challenge3-a.html)
 
 ### 3.b. (8 points)
 
 ![image](https://www.dropbox.com/s/cb99egdsxtozr1g/Screenshot%202014-10-20%2001.22.48.png?dl=1)
 
-[challenge3-b](checkpoint3-b.html)
+[challenge3-b](challenge3-b.html)
 
 ### 3.c. (8 points)
 
-![image](image.png?raw=true)
+![image](https://www.dropbox.com/s/o4tx3eznc64nma2/Screenshot%202014-10-20%2022.15.38.png?dl=1)
 
-[challenge3-c](checkpoint3-c.html)
+[challenge3-c](challenge3-c.html)

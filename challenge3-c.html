@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>D3</title>
+        <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/d3/3.4.12/d3.min.js"></script>
+        <style type="text/css">
+        </style>
+    </head>
+    <body>
+        <script type="text/javascript">
+          var link = "https://api.github.com/orgs/csci-4830-002-2014/repos"
+          d3.json(link, function(error, data) {
+            var w = 10000;
+            var h = 10000;
+
+            var svg = d3.select("body")
+                        .append("svg")
+                        .attr("width", w)
+                        .attr("height", h);
+
+            var element = svg.selectAll(".element")
+                .data(data)
+                .enter()
+                .append("g")
+                .attr("class","element");
+
+            element.append("line")
+              .attr("x1", function(d){ return 260; })
+              .attr("y1", function(d){ return 100 * (new Date(d.created_at).getMonth()); })
+              .attr("x2", function(d){ return 500; })
+              .attr("y2", function(d){ return 50 + data.indexOf(d)*50; })
+              .attr("stroke-width", 2)
+              .attr("stroke", "black");
+
+            element.append("rect")
+              .attr("width", 200)
+              .attr("height", 40)
+              .attr("x", function(d){ return 60; })
+              .attr("y", function(d){ return -20 + 100 * (new Date(d.created_at).getMonth()); })
+              .attr("stroke", "black")
+              .attr("stroke-width", 2)
+              .attr("fill", "white");
+
+            element.append("rect")
+              .attr("width", 200)
+              .attr("height", 40)
+              .attr("x", function(d){ return 500; })
+              .attr("y", function(d){ return 50*data.indexOf(d) + 20; })
+              .attr("stroke", "black")
+              .attr("stroke-width", 2)
+              .attr("fill", "white");
+
+            element.append("text")
+              .attr("dx", function(d){ return 120; })
+              .attr("dy", function(d){ return 100 * (new Date(d.created_at).getMonth()); })
+              .text(function(d){
+                  return "2014-" + (new Date(d.created_at).getMonth());
+              });
+
+            element.append("text")
+              .attr("dx", function(d,i){ return 550; })
+              .attr("dy", function(d,i){ return 50 + data.indexOf(d)*50; })
+              .text(function(d){ return d.name; });
+          });
+        </script>
+    </body>
+</html>
