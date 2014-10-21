@@ -108,7 +108,7 @@ She 3d printed teeth grills based on infromation from lyrics from different hip 
 
 ### 2.e. (5 points)
 
-![image](image.png?raw=true)
+![image](ch-2e.png)
 
 ### 2.f. (5 points)
 

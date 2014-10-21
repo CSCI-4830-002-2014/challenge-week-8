@@ -33,7 +33,6 @@
             .attr("width", width);
 
         d3.json("https://api.github.com/orgs/csci-4830-002-2014/repos", function(error, dataset) {
-            /* Add + so that it finds the max number */
             data = dataset;
             x.domain([0, d3.max(data, function (d) {
                 return d.forks_count;
