@@ -4,25 +4,28 @@ Austin Wood
 
 # How many points have you earned?
 
-0/100
+85/100
 
 # How many hours have you spent on this?
 
-fill-in-your-answer
+8
 
 # What is the most difficult part about this week's challenge?
 
-fill-in-your-answer
+It was so damn long!!! I understand that we should have started earlier, but I put a good deal of effort into this assignment, I'm a slower learner than most, and this just took a very long time.
 
 # Show and tell (6 points)
 
 ## Link (2 points)
 
-[title-of-the-article](http://link-to-an-example-of-big-data-visualization-in-a-public-space)
+[Flight Patterns Color](https://www.youtube.com/watch?v=ystkKXzt9Wk)
+[Serendipity Spotify](https://www.spotify.com/us/arts/serendipity/)
 
 ## Describe briefly the "motivation" and "intended audience" of this public visualization (4 points).
 
-fill-in-your-answer
+The first one just shows an incredible visualization of flight patterns across the USA over a given 24 hour period. It's most incredible around 7am when you see the eastern part of the country explode with traffic. I'm not sure how useful this is, I just think it's very fun to see. I would love to know how the data is collected and what's used to display it.
+
+The second link is to a fun website that shows that every few seconds, at least two people hit "play" on the exact same song at the exact same time on Spotify around the globe. Again, I don't see the importance here, but it's just a small glimpse into how much data Spotify has.
 
 # Checkpoints (5 points x 4 = 20 points)
 
@@ -67,9 +70,9 @@ fill-in-your-answer
 
 ### 1.a. (5 points)
 
-![image](image.png?raw=true)
+![challenge 1-a](img/d3_ch1-a.png?raw=true)
 
-[challenge1-a](challenge1-a.html)
+[challenge 1-a](challenges/challenge1-a.html)
 
 ### 1.b. (5 points)
 
