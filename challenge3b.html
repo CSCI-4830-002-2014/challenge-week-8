@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>D3-3B</title>
+        <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/d3/3.4.12/d3.min.js"></script>
+        <style type="text/css"> 
+
+        </style>
+    </head>
+    <body>
+    <h1> Sam Korn Challenge 3b!</h1>
+        <script type="text/javascript">
+            var w = 1200;
+            var h = 600;
+            var barSpacing = 50;
+            var barWidth = 20;
+            var padding = 50;   
+
+           
+            d3.json("https://api.github.com/orgs/csci-4830-002-2014/repos",
+                function(error, data) {
+                  dataset = data;
+            
+
+
+            var svg = d3.select("body")          
+                        .append("svg")
+                        .attr("width", w)
+                        .attr("height", h);
+
+
+            // svg.selectAll("rect")
+            //   .data(dataset)
+            //   .enter().append("rect")
+            //   .attr("width", w)
+            //   .attr("height", h)
+            //   .attr("stroke-width",5)
+            //   .attr("stroke","black")
+            //   .attr("fill","none");
+
+
+
+
+            // svg.selectAll("text")
+            //    .data(dataset)
+            //    .enter()
+            //    .append("text")
+            //    .text(function(d, i) {
+            //         return "(" + i + ") " + 
+            //           "name=" + d.name + "," +
+            //           "id=" + d.id + "," + 
+            //           "size=" + d.size + "," + 
+            //           "forks=" + d.forks_count;
+            //    })
+            //    .attr("x", 10)
+            //    .attr("y", function(d, i) {
+            //       return 10 + 10*i;
+            //     })
+            //    .attr("font-family", "sans-serif")
+            //    .attr("font-size", "11px");
+
+
+            // ******* SCALE FUNCTIONS *********
+            // X = # of Forks
+            // Y = # of Issues
+            var xScale = d3.scale.linear()
+               .domain([0, d3.max(dataset, function(d) { return d.forks_count; })])
+               .range([padding, w-padding]);    
+            var yScale = d3.scale.linear()
+               .domain([0, d3.max(dataset, function(d) { return d.forks_count })])
+               .range([padding, h-padding]);
+            var rScale = d3.scale.linear()
+               .domain([0, d3.max(dataset, function(d) { return d.size; })])
+               .range([10, 40]);     
+            // ******* END SCALE FUNCTIONS ********               
+
+            // var chart = d3.select("body")          
+            //   .append("svg")
+            //   .attr("width", w)
+            //   .attr("height", h);
+
+
+            svg.selectAll("rect")
+              .data(dataset)
+              .enter().append("rect")
+              .attr("x", function(d,i) { return i * barSpacing + padding})
+              .attr("y", padding)
+              .attr("width",10)
+              .attr("height", function(d) { return yScale(d.forks_count)})
+              .attr("fill", function(d) { if(d.watchers_count > 0) return "blue";
+                else return "none"; } )
+              .attr("stroke","blue")
+              .attr("stroke-width",5);
+
+            svg.selectAll("circle")
+              .data(dataset)
+              .enter().append("circle")
+              .attr("cx", function(d,i) { return i * barSpacing + padding})
+              .attr("cy", padding)
+              .attr("r",function(d) {return rScale(d.size) })
+              .attr("fill","green")
+            // var circle = svg.selectAll("circle")
+            // .data(dataset)
+            // .enter().append("g");
+            // .attr("transform", function(d, i) { return "translate(0," + i * barHeight + ")"; }); //Relic of a bar chart
+
+            // circle.append("circle")
+            //     .attr("cx", function(d) { return xScale(d.forks_count); })
+            //     .attr("cy", function(d) { return yScale(d.open_issues); })
+            //     .attr("r", 10)
+            //     .attr("fill","none")
+            //     .attr("stroke","red")
+            //     .attr("stroke-width",2);
+
+
+            // svg.selectAll("line")
+            //   .data(dataset)
+            //   .enter().append("line")
+            //   .attr("x1",0)
+            //   .attr("y1",0)
+            //   .attr("x2", function(d) { return xScale(d.forks_count); })
+            //   .attr("y2", function(d) { return yScale(d.open_issues); })
+            //   .attr("stroke-width", 2)
+            //   .attr("stroke", "black");
+
+
+            // svg.selectAll("text")
+            //   .data(dataset)
+            //   .enter().append("text")
+            //   .text(function(d) {
+            //     var teststring = String(d.name);
+            //   if(teststring.indexOf("hackathon") > -1) { return "H"; }
+            //   else if(teststring.indexOf("challenge") > -1) { return "C"; }
+            //   else { return "?"; }
+            // })
+            //   .attr("x", function(d) { return xScale(d.forks_count); })
+              // .attr("y", function(d) { return yScale(d.open_issues); })
+
+
+
+
+
+            // circle.append("text")
+            //     .attr("x", function(d) { return xScale(d.forks_count)-10; })
+            //     .attr("y", function(d) { return yScale(d.size); })
+            //     .attr("dy", ".35em")
+            //     .text(function(d) { return "(" + d.forks_count + "," + d.size + ")"; })
+            //     .attr("font-family", "sans-serif")
+            //     .attr("font-size", "11px")
+            //     .attr("fill", "black");
+
+            // circle.append("text")
+            //     .attr("x", function(d) { return xScale(d.forks_count)-25; })
+            //     .attr("y", function(d) { return yScale(d.size)-10; })
+            //     .attr("dy", ".35em")
+            //     .text(function(d) { return d.name; })
+            //     .attr("font-family", "sans-serif")
+            //     .attr("font-size", "11px")
+            //     .attr("fill", "black");
+            });
+  
+
+
+        </script>
+    </body>
+</html>

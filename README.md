@@ -112,18 +112,18 @@ This visualization was from a contest in order to show a general audience an exa
 
 ### 3.a. (8 points)
 
-![image](image.png?raw=true)
+![image](D3Challenge3a.png)
 
-[challenge3-a](checkpoint3-a.html)
+[challenge3-a](challenge3a.html)
 
 ### 3.b. (8 points)
 
-![image](image.png?raw=true)
+![image](D3Challenge3b.png)
 
-[challenge3-b](checkpoint3-b.html)
+[challenge3-b](challenge3b.html)
 
 ### 3.c. (8 points)
 
-![image](image.png?raw=true)
+![image](D3Challenge3c.png)
 
-[challenge3-c](checkpoint3-c.html)
+[challenge3-c](challenge3c.html)
