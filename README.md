@@ -4,13 +4,13 @@ Nikita Voskoboynik
 
 # How many points have you earned?
 
-75/100
+80/100
 
 (Make your own calculation and replace the number 0 with the points you think you've earned.)
 
 # How many hours have you spent on this?
 
-6 hours
+9 hours
 
 # What is the most difficult part about this week's challenge?
 
@@ -82,6 +82,7 @@ challenge1c.html
 
 ### 1.d. (5 points)
 
+??????
 
 ## Challenge 2 (5 points x 6 = 30 points)
 
@@ -115,9 +116,9 @@ challenge1c.html
 
 ### 3.a. (8 points)
 
-![image](image.png?raw=true)
+[Imgur](http://i.imgur.com/iHjqIb5.png)
 
-[challenge3-a](checkpoint3-a.html)
+challenge3a.html
 
 ### 3.b. (8 points)
 
