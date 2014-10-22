@@ -75,24 +75,19 @@ fill-in-your-answer
 
 ![image](https://www.dropbox.com/s/4yrlcuvs0jg0ayx/Screenshot%202014-10-19%2023.09.23.png?dl=1)
 
-[challenge1-b](checkpoint1-b.html)
+[challenge1-b](challenge1-b.html)
 
 ### 1.c. (5 points)
 
 ![image](https://www.dropbox.com/s/w160jazejtiurge/Screenshot%202014-10-19%2023.12.52.png?dl=1)
 
-[challenge1-c](checkpoint1-c.html)
+[challenge1-c](challenge1-c.html)
 
 ### 1.d. (5 points)
 
-![image](image.png?raw=true)
+![image](https://www.dropbox.com/s/osd6bs0tzpoyhug/Screenshot%202014-10-22%2015.31.42.png?dl=1)
 
-Ummm.... Tip is ridiculously buggy. i.e.
-
-This seems to work:
-`tip = d3.tip().attr('class', 'd3-tip').html(function(d) { return d; });`
-Yet this doesn't:
-`var tip = d3.tip().attr('class', 'd3-tip').html(function(d) { return d; });`
+[challenge1-c](challenge1-c.html)
 
 What gives?
 
