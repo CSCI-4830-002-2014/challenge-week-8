@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>D3</title>
+        <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/d3/3.4.12/d3.min.js"></script>
+        <style type="text/css">  
+        </style>
+    </head>
+    <body>
+        <script type="text/javascript">
+            var w = 600;
+            var h = 600;  
+
+            d3.json("https://api.github.com/orgs/csci-4830-002-2014/repos",
+              function(error, data) {
+
+                var padding = 20;
+                dataset = data;
+
+                var svg = d3.select("body")          
+                            .append("svg")
+                            .attr("width", w)
+                            .attr("height", h);
+ 
+
+                svg.selectAll("circle")
+                   .data(dataset)
+                   .enter()
+                   .append("circle")
+                   .attr("fill", "blue")
+                   .attr("cx", function (d,i){
+                      return 25 + i*50;
+                  })
+                   .attr("cy", function (d,i){
+                      return 350 - (80 + d.forks_count*2 + ((Math.sqrt(d.size)/4)/2)) - (Math.sqrt(d.size)/4);
+                   })
+                  .attr("r", function(d) {
+                      return Math.sqrt(d.size)/4;
+                  });
+
+
+                svg.selectAll("rect")
+                  .data(dataset)
+                  .enter() 
+                  .append("rect")             
+                  .attr("x", function (d,i){
+                      return 21 + i*50;
+                  })
+                  .attr("y", function (d,i){
+                    return 350 - (80 + d.forks_count*2 + ((Math.sqrt(d.size)/4)/2));
+                  })
+                  .attr("width", function (d,i){
+                      return 8;
+                  })
+                  .attr("height", function (d,i){
+                      return 80 + d.forks_count*2 + ((Math.sqrt(d.size)/4)/2);
+                  })
+                  .attr("stroke", "black")
+                  .attr("stroke-width", 2)
+                  .attr("fill", function (d,i){
+                      if (d.watchers_count > 0){
+                        return 'gray';
+                      }
+                      return 'white';
+                  });
+
+                }); 
+ 
+           
+        </script>
+    </body>
+</html>

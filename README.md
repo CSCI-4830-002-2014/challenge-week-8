@@ -4,15 +4,15 @@ Alexia Newgord
 
 # How many points have you earned?
 
-76/100
+98/100
 
 # How many hours have you spent on this?
 
-9.5
+10.5
 
 # What is the most difficult part about this week's challenge?
 
-Challenge 1
+Challenge 1 was hard to get started.  Something funky was going on with the date parsing for the last part of challenge 3.
 
 # Show and tell (6 points)
 
