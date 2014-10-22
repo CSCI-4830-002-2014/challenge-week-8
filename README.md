@@ -10,7 +10,7 @@ Daniel Nolan
 
 # How many hours have you spent on this?
 
-12
+13
 
 # What is the most difficult part about this week's challenge?
 
@@ -92,27 +92,27 @@ The motivation behind this was to link Excel files relative to geographic locati
 
 ### 2.a. (5 points)
 
-![image](image.png?raw=true)
+![image](http://imgur.com/qHwpKqg.png)
 
 ### 2.b. (5 points)
 
-![image](image.png?raw=true)
+![image](http://imgur.com/Fp5CpoV.png)
 
 ### 2.c. (5 points)
 
-![image](image.png?raw=true)
+![image](http://imgur.com/Ic4RQq0.png)
 
 ### 2.d. (5 points)
 
-![image](image.png?raw=true)
+![image](http://imgur.com/hSkWZMA.png)
 
 ### 2.e. (5 points)
 
-![image](image.png?raw=true)
+![image](http://imgur.com/YJNVce6.png)
 
 ### 2.f. (5 points)
 
-![image](image.png?raw=true)
+![image](http://imgur.com/vWJBXsP.png)
 
 [challenge2](checkpoint2.html)
 
@@ -120,18 +120,18 @@ The motivation behind this was to link Excel files relative to geographic locati
 
 ### 3.a. (8 points)
 
-![image](image.png?raw=true)
+![image](http://imgur.com/5tE6lRw.png)
 
-[challenge3-a](checkpoint3-a.html)
+[Challenge3a](Challenge3a.html)
 
 ### 3.b. (8 points)
 
-![image](image.png?raw=true)
+![image](http://imgur.com/yNsafIv.png)
 
-[challenge3-b](checkpoint3-b.html)
+[Challenge3b](Challenge3b.html)
 
 ### 3.c. (8 points)
 
 ![image](image.png?raw=true)
 
-[challenge3-c](checkpoint3-c.html)
+[Challenge3c](Challenge3c.html)
