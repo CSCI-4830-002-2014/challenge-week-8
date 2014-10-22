@@ -8,7 +8,7 @@ Alexia Newgord
 
 # How many hours have you spent on this?
 
-10.5
+12
 
 # What is the most difficult part about this week's challenge?
 
