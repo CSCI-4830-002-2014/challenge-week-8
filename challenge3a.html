@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Challenge 3a</title>
+      <script type="text/javascript" src="http://d3js.org/d3.v3.min.js"></script>
+    <style type="text/css">
+    </style>
+  </head>
+  <body>
+    <script type="text/javascript">
+      var width = 1280;
+      var Height = 800;
+      var padding = 10;
+
+      d3.json("https://api.github.com/orgs/csci-4830-002-2014/repos",
+        function(error, data) {
+          
+          var xScale = d3.scale.linear()
+                         .domain([0, d3.max(data, function(d) { 
+                            return d.forks_count; })])
+                         .range([padding, width - padding * 2]);
+
+          var yScale = d3.scale.linear()
+                         .domain([0, d3.max(data, function(d) { 
+                          return d.open_issues_count; })])
+                         .range([Height - padding, padding]);
+
+          var svg = d3.select("body")
+                      .append("svg")
+                      .attr("width", width)
+                      .attr("height", Height);
+
+          svg.selectAll("line")
+             .data(data)
+             .enter()
+             .append("line")
+             .attr("x1", function(d){ return 0; })
+             .attr("y1", function(d){ return 0; })
+             .attr("x2", function(d){ 
+                return xScale(d.forks_count); })
+             .attr("y2", function(d){ 
+                return yScale(d.open_issues_count); })
+             .attr("stroke-width", 2)
+             .attr("stroke", "black");
+
+          svg.selectAll("circle")
+             .data(data)
+             .enter()
+             .append("circle")
+             .attr("cx", function(d) {
+                return xScale(d.forks_count);
+             })
+             .attr("cy", function(d) {
+                return yScale(d.open_issues_count);
+             })
+             .attr("r", 15)
+             .style("fill", "#58ACFA")
+             .style("opacity", "1.0")
+             .attr("stroke-width", 2)
+             .attr("stroke", "black");
+
+          svg.selectAll("text")
+             .data(data)
+             .enter()
+             .append("text")
+             .text(function(d) {
+                if(d.name.indexOf("challenge")){
+                  return "C";
+                }
+                else if(d.name.indexOf("hackathon"))
+                {
+                  return "H";
+                }
+                else{
+                  return "Neither";
+                }
+             })
+             .attr("x", function(d) {
+                return xScale(d.forks_count) - 3;
+             })
+             .attr("y", function(d) {
+                return yScale(d.open_issues_count) + 8;
+             })
+             .attr("font-family", "Times New Roman")
+             .attr("font-size", "10px")
+             .attr("fill", "black");
+
+            });
+    </script>
+  </body>
+</html>

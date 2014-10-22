@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Challenge 3b</title>
+  <script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+  <script src="http://labratrevenge.com/d3-tip/javascripts/d3.tip.v0.6.3.js"></script>
+  <link rel="stylesheet" type="text/css" href="c1.css">
+</head>
+<body>
+
+  <div class="chart"></div>
+  <script type="text/javascript">
+  var w = 1280;
+  var h = 800;     
+
+  d3.json("https://api.github.com/orgs/csci-4830-002-2014/repos",
+    function(error, data) {
+      dataset = data;
+
+      var xScale = d3.scale.linear()
+      .domain([0,d3.max(dataset, function(d) { 
+        return d.forks_count;
+      })])
+      .range([10, 500]);
+
+      var yScale = d3.scale.linear()
+      .domain([0,d3.max(dataset, function(d) {
+        return d.open_issues_count;
+      })])
+      .range([10, 280]);
+
+      var rScale = d3.scale.linear()
+      .domain([0,d3.max(dataset, function(d) {
+        return d.size;
+      })])
+      .range([10, 25]);
+
+      var svg = d3.select("body")
+      .append("svg")
+      .attr("width", w)
+      .attr("height", h);
+
+      symbol = svg.selectAll("g")
+      .data(data)
+      .enter()
+      .append("g")
+      .attr("transform", function(d, i) {
+        return "translate(" + xScale(d.x) + "," + yScale(d.y) +")";
+      });
+
+      svg.selectAll("circle")
+      .data(data)
+      .enter()
+      .append("circle")
+      .attr("cx", function(d, i) {
+       return 70 * i;  +8;
+
+     })
+      .attr("cy", function(d) {
+       return 150 - d.forks_count - rScale(d.size) ;
+     })
+      .attr("r", function(d) {
+       return rScale(d.size);
+     })
+
+      symbol.append("rect")
+      .attr("width", function(d,i){
+       return 10;
+     })
+      .attr("height", function(d,i){
+       return d.forks_count;
+     })                
+      .attr("x", function(d, i){
+       return 70 * i - 5;
+     })
+      .attr("y", function(d){
+       return 150 - d.forks_count; 
+     })                
+      .attr("fill", function(d, i){
+       if (d.watchers > 0) {
+        return "black"
+      }; 
+      if (d.watchers == 0) {
+        return "red"
+      }; 
+
+    });   
+    })
+</script>
+</body>
+</html>
