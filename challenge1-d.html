@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>D3-Challenge1D</title>
+        <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/d3/3.4.12/d3.min.js"></script>
+        <script src="http://labratrevenge.com/d3-tip/javascripts/d3.tip.v0.6.3.js"></script>
+        <style type="text/css"> 
+        .d3-tip {
+          line-height: 1;
+          font-weight: bold;
+          padding: 12px;
+          background: rgba(0, 0, 0, 0.8);
+          color: #fff;
+          border-radius: 2px;
+        }
+
+        /* Creates a small triangle extender for the tooltip */
+        .d3-tip:after {
+          box-sizing: border-box;
+          display: inline;
+          font-size: 10px;
+          width: 100%;
+          line-height: 1;
+          color: rgba(0, 0, 0, 0.8);
+          content: "\25BC";
+          position: absolute;
+          text-align: center;
+        }
+
+        /* Style northward tooltips differently */
+        .d3-tip.n:after {
+          margin: -1px 0 0 0;
+          top: 100%;
+          left: 0;
+        } 
+        </style>
+    </head>
+    <body>
+    <h1> Sam Korn Challenge 1d!</h1>
+        <script type="text/javascript">
+            var w = 600;
+            var h = 600;
+            var barHeight = 10;
+            var padding = 50;   
+
+           
+            d3.json("https://api.github.com/orgs/csci-4830-002-2014/repos",
+                function(error, data) {
+                  dataset = data;
+            
+            var tip = d3.tip()
+              .attr('class', 'd3-tip')
+              .offset([-10, 0])
+              .html(function(d) {
+                return "<strong>Forks Count:</strong> <span style='color:red'>" + d.forks_count + 
+                "</span> \n Open Issues:</strong> <span style='color:red'>" + d.open_issues;
+              })
+            var svg = d3.select("body")          
+                        .append("svg")
+                        .attr("width", w)
+                        .attr("height", h);
+
+ 
+            svg.selectAll("text")
+               .data(dataset)
+               .enter()
+               .append("text")
+               .text(function(d, i) {
+                    return "(" + i + ") " + 
+                      "name=" + d.name + "," +
+                      "id=" + d.id + "," + 
+                      "size=" + d.size + "," + 
+                      "forks=" + d.forks_count;
+               })
+               .attr("x", 10)
+               .attr("y", function(d, i) {
+                  return 10 + 10*i;
+                })
+               .attr("font-family", "sans-serif")
+               .attr("font-size", "11px");
+
+            /* Invoke the tip in the context of your visualization */
+            svg.call(tip)
+
+            // ******* SCALE FUNCTIONS *********
+            var xScale = d3.scale.linear()
+               .domain([0, d3.max(dataset, function(d) { return d.forks_count; })])
+               .range([padding, w-padding]);    
+            var yScale = d3.scale.linear()
+               .domain([0, d3.max(dataset, function(d) { return d.size; })])
+               .range([padding, h-padding]);
+            var rScale = d3.scale.linear()
+               .domain([0, d3.max(dataset, function(d) { return d.open_issues; })])
+               .range([1, 20]);                    
+
+            var chart = d3.select("body")          
+              .append("svg")
+              .attr("width", w)
+              .attr("height", h);
+
+            var circle = chart.selectAll("circle")
+            .data(dataset)
+            .enter().append("g")
+            .attr("transform", function(d, i) { return "translate(0," + i * barHeight + ")"; });
+
+            circle.append("circle")
+                .attr("cx", function(d) { return xScale(d.forks_count); })
+                .attr("cy", function(d) { return yScale(d.size); })
+                .attr("r", function(d) { return rScale(d.open_issues); })
+                .attr("fill","green")
+                .attr("stroke","red")
+                .attr("stroke-width",2)
+                .on('mouseover', tip.show)
+                .on('mouseout', tip.hide);
+
+
+
+            circle.append("text")
+                .attr("x", function(d) { return xScale(d.forks_count)-10; })
+                .attr("y", function(d) { return yScale(d.size); })
+                .attr("dy", ".35em")
+                .text(function(d) { return "(" + d.forks_count + "," + d.size + ")"; })
+                .attr("font-family", "sans-serif")
+                .attr("font-size", "11px")
+                .attr("fill", "black");
+
+            circle.append("text")
+                .attr("x", function(d) { return xScale(d.forks_count)-25; })
+                .attr("y", function(d) { return yScale(d.size)-10; })
+                .attr("dy", ".35em")
+                .text(function(d) { return d.name; })
+                .attr("font-family", "sans-serif")
+                .attr("font-size", "11px")
+                .attr("fill", "black");
+            });
+
+
+        </script>
+    </body>
+</html>
