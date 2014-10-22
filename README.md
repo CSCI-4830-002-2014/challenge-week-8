@@ -4,15 +4,15 @@ Alexia Newgord
 
 # How many points have you earned?
 
-46/100
+76/100
 
 # How many hours have you spent on this?
 
-8
+9.5
 
 # What is the most difficult part about this week's challenge?
 
-Scatter Plot
+Challenge 1
 
 # Show and tell (6 points)
 
