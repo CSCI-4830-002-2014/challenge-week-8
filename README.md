@@ -4,7 +4,7 @@ Logan Bates
 
 # How many points have you earned?
 
-71/100
+79/100
 
 (Make your own calculation and replace the number 0 with the points you think you've earned.)
 
@@ -116,18 +116,18 @@ The article itself alludes to places like college campuses and museums being the
 
 ### 3.a. (8 points)
 
-![image](image.png?raw=true)
+![image](challenge3a..png?raw=true)
 
-[challenge3-a](checkpoint3-a.html)
+[challenge3-a](challenge3a.html)
 
 ### 3.b. (8 points)
 
-![image](image.png?raw=true)
+![image](challenge3b.png?raw=true)
 
-[challenge3-b](checkpoint3-b.html)
+[challenge3-b](challenge3b.html)
 
 ### 3.c. (8 points)
 
-![image](image.png?raw=true)
+![image](challenge3c.png?raw=true)
 
-[challenge3-c](checkpoint3-c.html)
+[challenge3-c](challenge3c.html)
