@@ -134,6 +134,6 @@ crux of being a successful programmer and designer. The motivation depends on th
 
 ### 3.c. (8 points)
 
-![image](https://www.dropbox.com/s/2uxzs86kts7fy39/Screenshot%202014-10-22%2017.06.57.png?dl=1)
+![image](https://www.dropbox.com/s/8zjivi6p8tjcgfc/Screenshot%202014-10-22%2017.13.13.png?dl=1)
 
 [challenge3-c](challenge-3c.html)

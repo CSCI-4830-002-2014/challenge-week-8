@@ -97,9 +97,23 @@
 			   .attr("font-family", "sans-serif")
 			   .attr("font-size", "11px")
 			   .attr("fill", "pink");
+	      symbol.append("line")
+			.attr("x1", function(d){
+			    return xScale(40)+50; // TODO
+			})
+			.attr("y1", function(d){
+			    return yScale(25*(d.created_at.split("-")[1]-"08")); // TODO
+			})
+			.attr("x2", function(d){
+			  return xScale(300); // TODO
+			})
+			.attr("y2", function(d, i){
+			   return yScale(25*i); // TODO
+			})               
+			.attr("stroke-width", 2)
+			.attr("stroke", "black");
+
 			});
-
-
         </script>
     </body>
 </html>
