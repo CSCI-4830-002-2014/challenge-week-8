@@ -4,17 +4,17 @@ Logan Bates
 
 # How many points have you earned?
 
-79/100
+87/100
 
 (Make your own calculation and replace the number 0 with the points you think you've earned.)
 
 # How many hours have you spent on this?
 
-4
+8
 
 # What is the most difficult part about this week's challenge?
 
-Challenge 3
+Challenge 3 in whole.
 
 # Show and tell (6 points)
 
@@ -116,7 +116,7 @@ The article itself alludes to places like college campuses and museums being the
 
 ### 3.a. (8 points)
 
-![image](challenge3a..png?raw=true)
+![image](challenge3a.png?raw=true)
 
 [challenge3-a](challenge3a.html)
 
