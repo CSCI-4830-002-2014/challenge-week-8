@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>D3</title>
+        <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/d3/3.4.12/d3.min.js"></script>
+        <style type="text/css">  
+        </style>
+    </head>
+    <body>
+        <script type="text/javascript">
+            var w = 1400;
+            var h = 400;        
+            var margin = 100;
+
+        var link = "https://api.github.com/orgs/csci-4830-002-2014/repos"
+
+        d3.json(link, function(error, data) {
+          var svg = d3.select("body")
+                        .append("svg")
+                        .attr("width", w)
+                        .attr("height", h);
+
+
+            symbol = svg.selectAll("g")
+              .data(data)
+              .enter()
+              .append("g");
+
+            symbol.append("line")
+              .attr("x1", function (d,i){
+                  return i * 100;
+              })
+              .attr("y1", function (d){
+                  return d.forks_count * 5; // TODO
+              })
+              .attr("x2", function (d,i){
+                  return i * 100;
+              })
+              .attr("y2", function (d,i){
+                  return 0;
+              })
+              .attr("stroke-width", 20)
+              .attr("stroke", function(d){
+                if (d.watchers > 0)
+                  return "black"
+                return "blue"
+              });
+
+            symbol.append("circle")
+                .attr("r", function(d) { return d.forks_count; })
+                .attr("cx", function(d,i) { return i*100; })
+                .attr("cy", function(d) {return d.forks_count * 5; })
+                .attr("fill", "red");
+
+
+        //     symbol.append("rect")
+        //         .attr("width", function(d){ return d.size/4; })
+        //         .attr("height", function(d){ return d.energy; })
+        //         .attr("x", function(d){ return (d.size/4 + d.size/2)/2; })
+        //         .attr("y", function(d){ return d.size; })
+        //         .attr("fill", "black");
+        //
+        //     symbol.append("circle")
+        //         .attr("r", function(d){
+        //           return 5;
+        //         })
+        //         .attr("cx", function(d){
+        //             return Math.cos(d.angle) * d.distance + 20; // TODO
+        //         })
+        //         .attr("cy", function(d){
+        //             return Math.sin(d.angle) * d.distance + 20; // TODO
+        //         })
+        //         .attr("fill", "skyblue");
+        //
+        //     symbol.append("circle") 
+        //         .attr("r", function(d){
+        //           return d.size/4;
+        //         })
+        //         .attr("cx", function(d){
+        //           if (d.quadrant == 1 || d.quadrant == 4){
+        //               return d.size/4; // TODO
+        //           }else{
+        //               return d.size/4; // TODO
+        //           }
+        //         })
+        //         .attr("cy", function(d){
+        //           if (d.quadrant == 3 || d.quadrant == 4){
+        //               return d.size/4; // TODO
+        //           }else{
+        //               return d.size/4; // TODO
+        //           }
+        //         })
+        //       .attr("fill", "blue");
+        //
+        //     symbol.append("line")
+        //       .attr("x1", function (d){
+        //         return Math.cos(d.angle) * d.distance + 20; // TODO
+        //       })
+        //       .attr("y1", function (d){
+        //         return Math.sin(d.angle) * d.distance + 20; // TODO
+        //       })
+        //       .attr("x2", function (d,i){
+        //         return d.size/4; // TODO
+        //       })
+        //       .attr("y2", function (d,i){
+        //         return d.size/4; // TODO
+        //       })               
+        //       .attr("stroke-width", 2)
+        //       .attr("stroke", "black");
+        });
+        </script>
+    </body>
+</html>

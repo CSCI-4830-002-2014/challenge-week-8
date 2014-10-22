@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+    <script type="text/javascript" src="http://d3js.org/d3.v3.min.js"></script>
+    <script src="http://labratrevenge.com/d3-tip/javascripts/d3.tip.v0.6.3.js"></script>
+	</head>
+  <style>
+    .d3-tip {
+      line-height: 1;
+      font-weight: bold;
+      padding: 12px;
+      background: rgba(0, 0, 0, 0.8);
+      color: #fff;
+      border-radius: 2px;
+    }
+
+    /* Creates a small triangle extender for the tooltip */
+    .d3-tip:after {
+      box-sizing: border-box;
+      display: inline;
+      font-size: 10px;
+      width: 100%;
+      line-height: 1;
+      color: rgba(0, 0, 0, 0.8);
+      content: "\25BC";
+      position: absolute;
+      text-align: center;
+    }
+
+    /* Style northward tooltips differently */
+    .d3-tip.n:after {
+      margin: -1px 0 0 0;
+      top: 100%;
+      left: 0;
+    }
+</style>
+	<body>
+		<script type="text/javascript">
+
+			//Width and height
+			var w = 1000;
+			var h = 600;
+			var padding = 20;
+
+
+      var link = "https://api.github.com/orgs/csci-4830-002-2014/repos"
+      d3.json(link, function(error, data) {
+          var dataset = []
+
+          data.forEach(function(repo) {
+            return dataset.push([repo.size, repo.forks_count]);
+          })
+
+          var xScale = d3.scale.linear()
+                     .domain([0, d3.max(dataset, function(d) { return d[0]; })])
+                     .range([padding, w - padding * 2]);
+
+          var yScale = d3.scale.linear()
+                     .domain([0, d3.max(dataset, function(d) { return d[1]; })])
+                     .range([h - padding, padding]);
+
+          var rScale = d3.scale.linear()
+                     .domain([0, d3.max(dataset, function(d) { return d[1]; })])
+                     .range([2, 5]);
+
+          var svg = d3.select("body")
+                .append("svg")
+                .attr("width", w)
+                .attr("height", h);
+
+          // don't judge me
+          tip = d3.tip().attr('class', 'd3-tip').html(function(d) { 
+              var location = dataset.indexOf(d);
+              return 'Name: ' + data[location].name;
+            });
+
+          svg.call(tip);
+
+          svg.selectAll("circle")
+             .data(dataset)
+             .enter()
+             .append("circle")
+             .attr("cx", function(d) {
+                return xScale(d[0]);
+             })
+             .attr("cy", function(d) {
+                return yScale(d[1]);
+             })
+             .attr("r", function(d) {
+                return 30;
+             })
+             .attr("fill", "black")
+             .on('mouseover', tip.show)
+             .on('mouseout', tip.hide);
+
+          svg.selectAll("text")
+             .data(dataset)
+             .enter()
+             .append("text")
+             .text(function(d) {
+                return d[0] + "," + d[1];
+             })
+             .attr("x", function(d) {
+                return xScale(d[0]) - 20;
+             })
+             .attr("y", function(d) {
+                return yScale(d[1]) + 5;
+             })
+             .attr("font-family", "sans-serif")
+             .attr("font-size", "11px")
+             .attr("fill", "white");
+          });
+		</script>
+	</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>D3</title>
+        <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/d3/3.4.12/d3.min.js"></script>
+        <style type="text/css">
+        </style>
+    </head>
+    <body>
+        <script type="text/javascript">
+          var link = "https://api.github.com/orgs/csci-4830-002-2014/repos"
+          d3.json(link, function(error, data) {
+            var w = 10000;
+            var h = 1000;
+
+            var svg = d3.select("body")
+                        .append("svg")
+                        .attr("width", w)
+                        .attr("height", h);
+
+            var element = svg.selectAll(".element")
+                .data(data)
+                .enter()
+                .append("g")
+                .attr("class","element");
+
+            element.append("line")
+              .attr("x1", 5)
+              .attr("y1", 5)
+              .attr("x2", function (d,i){
+                  return 30*d.forks_count;
+              })
+              .attr("y2", function (d,i){
+                  return 30*d.open_issues_count;
+              })
+              .attr("stroke-width", 2)
+              .attr("stroke", "black");
+
+
+            element.append("circle")
+              .attr("r", 40)
+              .attr("cx", function(d){ return 30*d.forks_count; })
+              .attr("cy", function(d){ return 30*d.open_issues_count; })
+              .attr("stroke", "black")
+              .attr("stroke-width", 2)
+              .attr("fill", "white");
+
+            element.append("text")
+              .attr("dx", function(d,i){ return 30*d.forks_count; })
+              .attr("dy", function(d,i){ return 30*d.open_issues_count; })
+              .text(function(d){
+                if (d.name.indexOf("challenge") != -1)
+                  return "C";
+                else
+                  return "H";
+              });
+          });
+        </script>
+    </body>
+</html>
