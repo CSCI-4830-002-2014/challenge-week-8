@@ -1,16 +1,16 @@
 # Name
 
-write-your-name
+Jake White
 
 # How many points have you earned?
 
-0/100
+45/100
 
 (Make your own calculation and replace the number 0 with the points you think you've earned.)
 
 # How many hours have you spent on this?
 
-fill-in-your-answer
+6
 
 # What is the most difficult part about this week's challenge?
 
@@ -20,31 +20,32 @@ fill-in-your-answer
 
 ## Link (2 points)
 
-[title-of-the-article](http://link-to-an-example-of-big-data-visualization-in-a-public-space)
+[The week in big data on Twitter, visualized](https://gigaom.com/2013/07/19/the-week-in-big-data-on-twitter-visualized/)
 
 ## Describe briefly the "motivation" and "intended audience" of this public visualization (4 points).
 
-fill-in-your-answer
+This article is written by Gigaom, a blog providing technological current events; which has an audienced encompassed of readers whom are interested in the use of big data as well as technological capabilities.
+The motivation of this article is to show their readers a unique view on how big data is being talked about on twitter
 
 # Checkpoints (5 points x 4 = 20 points)
 
 ## 1 (5 points)
 
-![image](image.png?raw=true)
+![image](http://i.imgur.com/hFIEeGv.png)
 
-[checkpoint1](checkpoint1.html)
+http://jsfiddle.net/t2pt7qz8/
 
 ## 2 (5 points)
 
-![image](image.png?raw=true)
+![image](http://i.imgur.com/4ID6zeX.png)
 
-[checkpoint2](checkpoint2.html)
+http://jsfiddle.net/uu9gpb3m/
 
 ## 3 (5 points)
 
-![image](image.png?raw=true)
+![image](http://i.imgur.com/Jfon9rB.png)
 
-[checkpoint3](checkpoint3.html)
+http://jsfiddle.net/uu9gpb3m/1/
 
 ## 4 (5 points)
 
