@@ -48,18 +48,18 @@ fill-in-your-answer
 
 ![checkpoint 2](img/d3_cp2.png?raw=true)
 
-[checkpoint2](checkpoints/checkpoint2.html)
+[checkpoint 2](checkpoints/checkpoint2.html)
 ## 3 (5 points)
 
 ![checkpoint 3](img/d3_cp3.png?raw=true)
 
-[checkpoint3](checkpoints/checkpoint3.html)
+[checkpoint 3](checkpoints/checkpoint3.html)
 
 ## 4 (5 points)
 
-![image](image.png?raw=true)
+![checkpoint 4](img/d3_cp4.png?raw=true)
 
-[checkpoint4](checkpoint4.html)
+[checkpoint 4](checkpoints/checkpoint4.html)
 
 # Challenges
 
