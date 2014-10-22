@@ -4,13 +4,13 @@ Alexander Tsankov
 
 # How many points have you earned?
 
-51/100
+71/100
 
 (Make your own calculation and replace the number 0 with the points you think you've earned.)
 
 # How many hours have you spent on this?
 
-5
+6.5
 
 # What is the most difficult part about this week's challenge?
 
@@ -72,19 +72,19 @@ She 3d printed teeth grills based on infromation from lyrics from different hip 
 
 ### 1.b. (5 points)
 
-![image](image.png?raw=true)
+![image](1b.png)
 
-[challenge1-b](checkpoint1-b.html)
+[challenge1-b](challenge1-b.html)
 
 ### 1.c. (5 points)
 
-![image](image.png?raw=true)
+![image](challenge-1c.png)
 
 [challenge1-c](checkpoint1-c.html)
 
 ### 1.d. (5 points)
 
-![image](image.png?raw=true)
+![image](challenge-1d.png)
 
 [challenge1-d](checkpoint1-d.html)
 
