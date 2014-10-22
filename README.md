@@ -4,13 +4,13 @@ Sam Korn
 
 # How many points have you earned?
 
-78/100
+92/100
 
 (Make your own calculation and replace the number 0 with the points you think you've earned.)
 
 # How many hours have you spent on this?
 
-8
+10
 
 # What is the most difficult part about this week's challenge?
 
