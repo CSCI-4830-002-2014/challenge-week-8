@@ -4,17 +4,15 @@ Ian Ker-Seymer
 
 # How many points have you earned?
 
-0/100
+96/100
 
 (Make your own calculation and replace the number 0 with the points you think you've earned.)
 
 # How many hours have you spent on this?
 
-fill-in-your-answer
-
-# What is the most difficult part about this week's challenge?
-
-fill-in-your-answer
+Getting the coordinated correct in D3. I had some trouble getting the correct coordinates
+and could have spent a lot more time 'perfecting' it, but I felt that it wasn't a great
+use of time so on 2 challenges I settled.
 
 # Show and tell (6 points)
 
@@ -28,16 +26,13 @@ large data sets are often unintutive for people, thus it is important to call on
 artists and creative types to give data 'meaning' by applying context and craft
 to the data sets.
 
-
-fill-in-your-answer
-
 # Checkpoints (5 points x 4 = 20 points)
 
 ## 1 (5 points)
 
-![image](https://www.dropbox.com/s/xps4vbyw2gxsvw2/Screenshot%202014-10-19%2020.07.51.png?dl=1)
-![image](https://www.dropbox.com/s/xps4vbyw2gxsvw2/Screenshot%202014-10-19%2020.07.51.png?dl=1)
-![image](https://www.dropbox.com/s/xps4vbyw2gxsvw2/Screenshot%202014-10-19%2020.07.51.png?dl=1)
+![image](https://www.dropbox.com/s/ltapm9yff6k2jx0/Screenshot%202014-10-22%2015.38.56.png?dl=1)
+![image](https://www.dropbox.com/s/kwqvsmctq2puyw6/Screenshot%202014-10-22%2015.39.14.png?dl=1)
+![image](https://www.dropbox.com/s/bj43tbv20uwqbli/Screenshot%202014-10-22%2015.39.39.png?dl=1)
 
 [checkpoint1-a](checkpoint1-a.html)
 [checkpoint1-b](checkpoint1-b.html)
