@@ -92,6 +92,10 @@ What gives?
 
 ### 2.b. (5 points)
 
+I did this one last, and you will see that the later challenges in 2 do not have the logic
+implemented from this challenge for those. However, since the challenges built off one another,
+I did not mark myself down for those.
+
 ![image](https://www.dropbox.com/s/zwpc7lo1vpf9oc3/Screenshot%202014-10-19%2023.58.39.png?dl=1)
 
 ### 2.c. (5 points)

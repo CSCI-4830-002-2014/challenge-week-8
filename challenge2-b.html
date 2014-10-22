@@ -10,7 +10,7 @@
     <body>
         <script type="text/javascript">
             var w = 800;
-            var h = 400;        
+            var h = 400;
             var margin = 100;
 
             var dataset = [
@@ -42,13 +42,13 @@
                 'size': 30,
                 'x': 35,
                 'y': 25,
-                'energy': 20,                                          
+                'energy': 20,
                 'angle': -Math.PI/4,
                 'distance': 40
-              },              
-            ];            
-           
-            var svg = d3.select("body")          
+              },
+            ];
+
+            var svg = d3.select("body")
                         .append("svg")
                         .attr("width", w)
                         .attr("height", h);
@@ -63,7 +63,7 @@
             .domain([0, d3.max(dataset.map(function(d) {
               return d.x
             }))])
-            .range([margin, w - margin]);            
+            .range([margin, w - margin]);
 
             symbol = svg.selectAll("g")
               .data(dataset)
@@ -86,20 +86,20 @@
                     return d.size/2;
                 })
                 .attr("x", function(d){
-                  if (d.quadrant == 1 || d.quadrant == 4){
-                      return d.size/2;
-                  }else{
-                      return d.size/2;
-                  }
+                    if (d.quadrant == 1 || d.quadrant == 4){
+                        return d.size/2;
+                    }else{
+                        return d.size/2 - d.size/2;
+                    }
                 })
-    .attr("y", function(d){
-      if (d.quadrant == 3 || d.quadrant == 4){
-          return 0; // TODO
-      }else{
-          return 0; // TODO
-      }
-    })                
-  .attr("fill", "blue");  
+                .attr("y", function(d){
+                    if (d.quadrant == 3 || d.quadrant == 4){
+                        return d.size/2; // TODO
+                    }else{
+                        return 0; // TODO
+                    }
+                })
+                .attr("fill", "blue");
         </script>
     </body>
 </html>
