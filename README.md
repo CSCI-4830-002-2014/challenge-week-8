@@ -1,54 +1,62 @@
 # Name
 
-write-your-name
+Alexander Tsankov
 
 # How many points have you earned?
 
-0/100
+66/100
 
 (Make your own calculation and replace the number 0 with the points you think you've earned.)
 
 # How many hours have you spent on this?
 
-fill-in-your-answer
+6.5
 
 # What is the most difficult part about this week's challenge?
 
-fill-in-your-answer
+D3 stuff is way to hard without proper training. 
 
 # Show and tell (6 points)
 
 ## Link (2 points)
 
-[title-of-the-article](http://link-to-an-example-of-big-data-visualization-in-a-public-space)
+[Interesting Big Data visualization ](http://www.psfk.com/2014/10/grillz-algorithm-hip-hop-visualization-exhibit.html)
 
 ## Describe briefly the "motivation" and "intended audience" of this public visualization (4 points).
 
-fill-in-your-answer
+She 3d printed teeth grills based on infromation from lyrics from different hip hop musicians.
 
 # Checkpoints (5 points x 4 = 20 points)
 
 ## 1 (5 points)
 
-![image](image.png?raw=true)
+![image](cp1_a.png)
 
-[checkpoint1](checkpoint1.html)
+[A](cp1-a.html)
+
+![image](cp1_c.png)
+
+[C](cp1-c.html)
+
+![image](cp1_e.png)
+
+[E](cp1-e.html)
 
 ## 2 (5 points)
 
-![image](image.png?raw=true)
+![image](cp-2.png)
 
-[checkpoint2](checkpoint2.html)
+[checkpoint2](cp2.html)
 
 ## 3 (5 points)
 
-![image](image.png?raw=true)
+![image](cp-3.png)
 
-[checkpoint3](checkpoint3.html)
+[checkpoint3](checkpoint-3.html)
 
 ## 4 (5 points)
 
-![image](image.png?raw=true)
+![image](cp-4.png)
 
 [checkpoint4](checkpoint4.html)
 
@@ -58,25 +66,25 @@ fill-in-your-answer
 
 ### 1.a. (5 points)
 
-![image](image.png?raw=true)
+![image](challenge-1.png)
 
 [challenge1-a](challenge1-a.html)
 
 ### 1.b. (5 points)
 
-![image](image.png?raw=true)
+![image](1b.png)
 
-[challenge1-b](checkpoint1-b.html)
+[challenge1-b](challenge1-b.html)
 
 ### 1.c. (5 points)
 
-![image](image.png?raw=true)
+![image](challenge-1c.png)
 
 [challenge1-c](checkpoint1-c.html)
 
 ### 1.d. (5 points)
 
-![image](image.png?raw=true)
+![image](challenge-1d.png)
 
 [challenge1-d](checkpoint1-d.html)
 
@@ -84,23 +92,23 @@ fill-in-your-answer
 
 ### 2.a. (5 points)
 
-![image](image.png?raw=true)
+![image](ch-2a.png)
 
 ### 2.b. (5 points)
 
-![image](image.png?raw=true)
+![image](ch-2b.png)
 
 ### 2.c. (5 points)
 
-![image](image.png?raw=true)
+![image](ch-2c.png)
 
 ### 2.d. (5 points)
 
-![image](image.png?raw=true)
+![image](ch-2d.png)
 
 ### 2.e. (5 points)
 
-![image](image.png?raw=true)
+![image](ch-2e.png)
 
 ### 2.f. (5 points)
 
