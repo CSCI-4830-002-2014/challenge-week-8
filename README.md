@@ -9,7 +9,7 @@ Jose Vieitez
 
 # How many hours have you spent on this?
 
-fill-in-your-answer
+5
 
 # What is the most difficult part about this week's challenge?
 
