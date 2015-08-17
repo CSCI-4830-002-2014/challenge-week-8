@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>D3: Scaled scatterplot, resized to be bigger!</title>
+      <script type="text/javascript" src="http://d3js.org/d3.v3.min.js"></script>
+    <style type="text/css">
+      /* No style rules here yet */   
+    </style>
+  </head>
+  <body>
+    <script type="text/javascript">
+
+      //Width and height
+      var w = 1800;
+      var h = 600;
+      var padding = 20;
+      
+      d3.json("https://api.github.com/orgs/csci-4830-002-2014/repos",
+                function(error, data) {
+                  dataset = data;
+
+      //Create scale functions
+      var xScale = d3.scale.linear()
+                 .domain([0, d3.max(dataset, function(d) { return d.forks_count; })])
+                 .range([padding, w - padding * 2]);
+
+      var yScale = d3.scale.linear()
+                 .domain([0, d3.max(dataset, function(d) { return d.open_issues_count; })])
+                 .range([h - padding, padding]);
+
+      var rScale = d3.scale.linear()
+                 .domain([0, d3.max(dataset, function(d) { return d.size; })])
+                 .range([8, 15]);
+  
+
+      //Create SVG element
+      var svg = d3.select("body")
+            .append("svg")
+            .attr("width", w)
+            .attr("height", h);
+
+      symbol = svg.selectAll("g")
+              .data(data)
+              .enter()
+              .append("g")
+              .attr("transform", function(d, i) {
+                return "translate(" + xScale(d.x) + "," + yScale(d.y) +")";
+              });
+
+           
+
+      svg.selectAll("circle")
+         .data(data)
+         .enter()
+         .append("circle")
+         .attr("cx", function(d, i) {
+            return 40 + i*40;
+         })
+         .attr("cy", function(d) {
+            return 100;
+         })
+         .attr("r", function(d) {
+            return rScale(d.size);
+         });
+        
+
+        symbol.append("rect")
+            .attr("width", function(d,i){
+                return 10;
+            })
+            .attr("height", function(d,i){
+                return d.forks_count; // TODO
+            })                
+            .attr("x", function(d, i){
+                return 35 + i*40; // TODO
+            })
+            .attr("y", function(d){
+                return 105; // TODO
+            })                
+          .attr("fill", function(d) {
+            if (d.watchers >0){
+              return "brown"
+            }
+            if (d.watchers == 0) {
+              return("skyblue")
+            }
+          }
+
+            );  
+
+      // svg.selectAll("text")
+      //    .data(data)
+      //    .enter()
+      //    .append("text")
+      //    .text(function(d) {
+      //       if(d.name.indexOf("hackathon") > -1){
+      //         return 'H';
+      //       } else if (d.name.indexOf("challenge") > -1){
+      //         return 'C';
+      //       };
+      //    })
+      //    .attr("x", function(d) {
+      //       return xScale(d.forks_count)-4;
+      //    })
+      //    .attr("y", function(d) {
+      //       return yScale(d.open_issues_count)+4;
+      //    })
+      //    .attr("font-family", "sans-serif")
+      //    .attr("font-size", "11px")
+      //    .attr("fill", "red");
+      });
+ 
+
+
+    </script>
+  </body>
+</html>
